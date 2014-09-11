@@ -47,7 +47,7 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 	nav {
-		color: 000000;
+//		background-color: #444;
 		height: 50px; 
 		width: 100%; 
 		z-index: 1; }
@@ -73,7 +73,7 @@
 	nav a:hover {
 		color: #FFFFFF; }
 	nav li a:link {
-		color: #000000;
+		color: #FFFFFF;
 		transition:color 1s;
 		-webkit-transition:color 1s; /* Safari */ }
 	nav li a:hover {
