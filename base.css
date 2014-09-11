@@ -71,9 +71,9 @@
 		transition:color 1s;
 		-webkit-transition:color 1s; }
 	nav a:hover {
-		color: #FFFFFF; }
+		color: #000000; }
 	nav li a:link {
-		color: #FFFFFF;
+		color: #000000;
 		transition:color 1s;
 		-webkit-transition:color 1s; /* Safari */ }
 	nav li a:hover {
