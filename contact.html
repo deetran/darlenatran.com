@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Darlena Tran's Portfolio</title>
+	<meta name="description" content="Darlena Trans's Portfolio">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<!-- End Basic Page Needs -->
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- End Mobile Specific Metas -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="skeleton.css">
+	<link rel="stylesheet" href="layout.css">
+	<!-- End CSS -->
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
+	<!-- End Google Fonts -->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!--	
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<!-- End Favicons -->
+	
+	<!-- Sticky Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.sticky.js"></script>
+	<script>
+		$(window).load(function(){
+			$("nav").sticky({ topSpacing: 0 });
+		});
+	</script>
+	<!-- End Sticky Nav -->
+	
+	<!-- Analytics -->
+	<script type="text/javascript">
+				
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-44924854-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+		window.onload = function() {
+			var links = document.getElementsByTagName("a");
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				link.onmouseover = function() {
+					this.setAttribute("org_title", this.title);
+					this.title = "";
+				};
+				link.onmouseout = function() {
+					this.title = this.getAttribute("org_title");
+				};
+			}
+		};
+	</script>
+	<!-- End Analytics -->
+	
+</head>
+<body style="background-color: #F2F2F2;">
+
+	<!-- Navigation -->
+	<header>
+		<nav>
+			<ul>	
+				<li class="current"><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="resume.html">RESUMÉ</a></li>
+				<li><a href="index.html">PORTFOLIO</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- End Navigation -->
+
+<div class="container">
+	<div class="fourteen columns contact offset-by-one">
+		<h2 style="margin-top: 90px"><strong>Get in Touch!</strong></h2>
+		<p>I'd love to hear from you. </p>
+		<p style="margin-top: 50px">Feel free to email me directly at <a href="hello@darlenatran.com">hello@darlenatran.com</a> or use the nifty contact form below.</p>
+	<!-- Contact Form -->
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="hello@darlenatran.com">Send Your Email</a>
+                </p>
+                
+                <div id="response">
+                </div>
+				
+            </form>
+	</div>
+</div>
+    <!-- End Contact Form -->
+		
+	</div>
+</div>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

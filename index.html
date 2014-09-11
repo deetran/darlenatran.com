@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Darlena Tran's Portfolio</title>
+	<meta name="description" content="Darlena Trans's Portfolio">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<!-- End Basic Page Needs -->
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- End Mobile Specific Metas -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="skeleton.css">
+	<link rel="stylesheet" href="layout.css">
+	<!-- End CSS -->
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
+	<!-- End Google Fonts -->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!--	
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<!-- End Favicons -->
+	
+	<!-- Sticky Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.sticky.js"></script>
+	<script>
+		$(window).load(function(){
+			$("nav").sticky({ topSpacing: 0 });
+		});
+	</script>
+	<!-- End Sticky Nav -->
+	
+	<!-- Analytics -->
+	<script type="text/javascript">
+				
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-44924854-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+		window.onload = function() {
+			var links = document.getElementsByTagName("a");
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				link.onmouseover = function() {
+					this.setAttribute("org_title", this.title);
+					this.title = "";
+				};
+				link.onmouseout = function() {
+					this.title = this.getAttribute("org_title");
+				};
+			}
+		};
+	</script>
+	<!-- End Analytics -->
+	
+</head>
+<body>
+
+
+	<!-- Portfolio -->
+
+	<header>
+		<nav>
+			<ul>	
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="resume.html">RESUMÉ</a></li>
+				<li class="current"><a href="index.html">PORTFOLIO</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="container">
+	
+	<!-- UI/UX -->
+		<div class="sixteen columns" style="margin-bottom: 30px">
+			<h1 style="margin-top: 90px; text-align: center;">UI / UX</h1>
+			<p style="text-align:center">Really in love with this stuff.</p>
+		</div>
+		<div class="eight columns cover">
+			<a href="paystation.html">
+				<img src="img/covers/paystation_cover.png" class="scale-with-grid">
+			</a>
+			<p style="margin-top: -30px; text-align: center;">Parking Pay Station Project</p>
+		</div>
+		<div class="eight columns cover">
+			<a href="ticketsnap.html">
+				<img src="img/covers/TS_cover.png" class="scale-with-grid">
+			</a>
+			<p style="margin: -30px 0 150px 0; text-align: center;">TicketSnap Mobile App Concept</p>
+		</div>
+	<!-- End UI/UX -->	
+	<hr>
+	<!-- Javascript -->
+		<div class="sixteen columns" style="margin-bottom: 30px">
+			<h1 style="margin-top: 90px; text-align: center;">Javascript</h1>
+			<p style="text-align:center">Fun to play with and good to know.</p>
+		</div>
+		<div class="eight columns cover">
+			<a href="memory-experiment.html">
+				<img src="img/covers/memory_cover.png" class="scale-with-grid">
+			</a>
+			<p style="margin-top: -30px; text-align: center;">Memory Recall Experiment</p>
+		</div>
+		<div class="eight columns cover">
+			<a href="illusory-pausing.html">
+				<img src="img/covers/illusory_cover.png" class="scale-with-grid">
+			</a>
+			<p style="margin: -30px 0 150px 0; text-align: center;">Illusory Pausing Demonstration</p>
+		</div>
+	<!-- End Javascript -->	
+	<hr>
+	<!-- Graphic Design -->
+		<div class="sixteen columns" style="margin-bottom: 30px">
+			<h1 style="margin-top: 90px; text-align: center;">Graphic Design</h1>
+			<p style="text-align:center">Some fun graphics I've made.</p>
+		</div>
+		<div class="eight columns cover">
+			<a href="rice-village.html">
+				<img src="img/covers/RV_cover.png" class="scale-with-grid">
+			</a>
+			<p style="margin-top: -30px; text-align: center;">Rice Village Redesign</p>
+		</div>
+		<div class="eight columns">
+			<a href="thresher.html">
+				<img src="img/covers/thresher_cover.png" class="scale-with-grid cover">
+			</a>
+			<p style="margin: -30px 0 150px 0; text-align: center;">Rice Thresher Graphics</p>
+		</div>
+	<!-- End Graphic Design -->	
+	</div>
+	
+
+<!-- End Portfolio -->
+
+</body>
+</html>

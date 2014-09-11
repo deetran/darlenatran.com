@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Darlena Tran's Portfolio</title>
+	<meta name="description" content="Darlena Trans's Portfolio">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<!-- End Basic Page Needs -->
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- End Mobile Specific Metas -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="skeleton.css">
+	<link rel="stylesheet" href="layout.css">
+	<!-- End CSS -->
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
+	<!-- End Google Fonts -->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!--	
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<!-- End Favicons -->
+	
+	<!-- Sticky Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.sticky.js"></script>
+	<script>
+		$(window).load(function(){
+			$("nav").sticky({ topSpacing: 0 });
+		});
+	</script>
+	<!-- End Sticky Nav -->
+	
+	<!-- Analytics -->
+	<script type="text/javascript">
+				
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-44924854-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+		window.onload = function() {
+			var links = document.getElementsByTagName("a");
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				link.onmouseover = function() {
+					this.setAttribute("org_title", this.title);
+					this.title = "";
+				};
+				link.onmouseout = function() {
+					this.title = this.getAttribute("org_title");
+				};
+			}
+		};
+	</script>
+	<!-- End Analytics -->
+	
+</head>
+<body>
+
+	<!-- Navigation -->
+
+	<header>
+		<nav>
+			<ul>	
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="resume.html">RESUMÉ</a></li>
+				<li class="current"><a href="index.html">PORTFOLIO</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- End Navigation -->
+
+<div class="sixteen columns ticketsnap">
+	<div style="margin-bottom: 30px">
+		<h1 style="margin-top: 90px; text-align: center;">Parking Pay Station Project</h1>
+		<p style="text-align: center;">This was a group project for my Methods in Human-Computer Interaction (HCI) class. Our job was to use data from methods and analyses in HCI to create a pay station interface for users of a 200-car uncontrolled surface lot. Below are some of the methods that I personally performed as well as a link to the entire report at the bottom of the page.</p>
+		<img src="img/paystation/task_analysis_1.png" style="display:block; margin: 90px auto 0 auto; width: 800px;">
+		<img src="img/paystation/task_analysis_2.png" style="display:block; margin: 0 auto; width: 500px">
+	</div>
+	
+	<p>&emsp; &emsp; Shown above is a task analysis for first time customers and returning customers. The task analysis helped us review the users' potential goals and make sure those goals were simple to accomplish.
+	</p>
+	
+	<center><div style="display:block; margin: 0 auto;">
+		<img src="img/paystation/link_analysis.png" style="margin: 90px auto 0 auto; width:300px">
+	</div></center>
+
+	<p>&emsp; &emsp; The link analysis shown above helped our team determine where to place the components of our pay station interface. The percentages represent how often the users tend to look between two components. High percentages indicate that the linked components should be placed near each other.
+	</p>
+	
+	<center><div style="display:block; margin: 0 auto;">
+		<img src="img/paystation/flow_analysis.png" style="margin: 90px auto 0 auto;">
+	</div></center>
+	
+	<div class="eight columns">
+	<p>&emsp; &emsp; Flow analyses allow the designer to visualize the flow of traffic for people, objects, information, or whatever else they may be studying. The main thing to look out for, especially in our case with vehicles, was paths of intersection. It is generally best to keep the number of intersections to a minimum to provide a smooth flow of information.
+		</p>
+	</div>
+	
+	<center><div style="display:block; margin: 0 auto;">
+		<img src="img/paystation/walkthrough_1.png" style="margin: 90px auto 0 auto; width: 300px">
+		<img src="img/paystation/walkthrough_2.png" style="margin: 90px auto 0 auto; width: 300px">
+		<img src="img/paystation/walkthrough_3.png" style="margin: 90px auto 0 auto; width: 300px">
+	</div></center>
+	
+	<p>&emsp; &emsp; These are some screens of the final interface design. As you can see, the design we ultimately ended up creating wasn't particularly novel. In fact, our surveys discovered that most people are actually rather satisfied with the design of current pay station systems. The main goal of the project was to gain understanding and practical applicability to real-life interfaces. There was a lot to take away from this project and I completed it with a greater understanding of HCI methods and analyses.
+	</p>
+	
+	<p style="text-align:center;"><a href="img/paystation/paystation_report.pdf" target="_blank">Click here to download the full report!</a>
+	</p>
+	
+</div>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
