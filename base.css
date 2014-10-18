@@ -104,11 +104,11 @@
 		margin: 0 auto;
 		border: #000000 1px solid;
 		background: #000000; }
-	.ticketsnap  p{
-		width: 40%; 
+	.project  p{
+		width: 50%; 
 		text-align:left }
 		
-/* #Resume Page
+/* Resume Page
 ================================================== */
 	.resume * {
 		font-family: 'Source Sans Pro', sans-serif; 
