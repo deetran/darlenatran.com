@@ -42,7 +42,9 @@
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	nav {
-		font-size: 75%;}
+		font-size: 70%;}
+	nav li {
+		margin: 14px 14px 0 0;}
 	}
 
 
