@@ -3,15 +3,24 @@
 	font-weight: 500;
 }
 
+/*probably need to fix this */
+h1 {
+	display: inline;
+	position: fixed;
+	top: -2px;
+	margin-left: 5px;
+}
+
 nav ul{
 	list-style-type: none;
-	text-align: center;
+	text-align: right;
 	padding: 0;
-	margin-top: 21px;
+	margin: 20px 0px;
 }
+
 li {
 	display: inline;
-	margin: 0 5%;
+	margin: 0 12px 0 20px;
 	font-size: 1em;
 }
 
@@ -54,11 +63,27 @@ img {
 		height: auto;
 		margin: 10px auto;
 	}
+	nav ul{
+		text-align: center;
+	}
+	nav ul li{
+		margin: 20px;
+	}
+	h1 {
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		text-align: center;
+		margin-top: 20px;
+	}
 }
 
 @media screen and (min-width: 1120px){
 	.wrapper {
 		width: 1100px;
+	}
+	nav ul{
+		margin: 20px 10px;
 	}
 }
 
