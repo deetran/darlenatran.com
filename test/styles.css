@@ -3,25 +3,36 @@
 	font-weight: 500;
 }
 
+/* Nav Bar Styles */
+
 /*probably need to fix this */
-h1 {
+nav h1 {
 	display: inline;
 	position: fixed;
-	top: -2px;
+	top: 20px;
 	margin-left: 5px;
 }
 
 nav ul{
+	margin: 20px 10px;
 	list-style-type: none;
 	text-align: right;
 	padding: 0;
-	margin: 20px 0px;
 }
 
-li {
+nav ul li {
 	display: inline;
 	margin: 0 12px 0 20px;
 	font-size: 1em;
+}
+
+/* Main Styles */
+
+.wrapper {
+	width: 720px;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	padding: 15px;
 }
 
 a{
@@ -41,69 +52,87 @@ a:active {
     color: black;
 }
 
-.wrapper {
-	width: 725px;
-	margin: 0 auto;
-}
-
-img {
+.portfolio img, .project img  {
 	width: 350px;
 	height: 250px;
 	margin: 5px;
 	display: inline-block;
 }
 
+.portfolio p {
+	width: 350px;
+	height: 250px;
+	line-height: 250px;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+span
+{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    padding: 10px;
+    width: 310px;
+}
+
+
+/*this img needs to be 1120px wide in Sketch*/
+div img {
+	margin: 0;
+	display: inline-block;
+}
+
+button {
+	display: block;
+	padding: 20px;
+	margin: 20px 0 60px 0;
+}
+
+h2 {
+	margin: 10px 0;
+}
+/* Responsive Desktop and Mobile between 0px and 745px */
 @media screen and (max-width: 745px), screen and (max-device-width: 745px){
 	.wrapper {
 		width: 90%;
-		margin: 0 auto;
 	}
-	img {
+
+	.portfolio img, .project img {
 		width: 100%;
 		height: auto;
 		margin: 10px auto;
 	}
+
+	.portfolio p {
+		display: inline;
+		height: auto;
+		line-height: 0px;
+	}
+
 	nav ul{
 		text-align: center;
+		margin: 40px 0;
 	}
+
+	/*need to fix font sizes*/
 	nav ul li{
 		margin: 20px;
+		font-size: 40px;
 	}
-	h1 {
+	nav h1 {
 		margin: 0 auto;
 		display: block;
 		position: relative;
 		text-align: center;
 		margin-top: 20px;
+		font-size: 40px;
+	}
+	span {
+		width: 100%;
+	}
+	video {
+		width: 100%;
 	}
 }
-
-@media screen and (min-width: 1120px){
-	.wrapper {
-		width: 1100px;
-	}
-	nav ul{
-		margin: 20px 10px;
-	}
-}
-
-/*for some reason this causes issue when scaling down
-{
-	.wrapper {
-		width: 90%;
-		margin: 0 auto;
-	}
-	img {
-	width: 100%;
-	height: auto;
-	margin: 5px;
-	display: inline-block;
-}
-	li {
-		display: inline;
-		margin: 0 5%;
-		font-size: 2em;
-	}
-}*/
-
-/* media query at width 845px??? */
