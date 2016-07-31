@@ -11,21 +11,29 @@ nav h1 {
 	display: inline-block;
 	float: left;
 	margin: 20px 10px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #333333;
+	line-height: 40px;
 }
 
 nav ul{
-	margin: 20px 10px;
-	list-style-type: none;
-	text-align: right;
-	padding: 0;
 	display: inline-block;
 	float: right;
+	margin: 20px 10px;
+	list-style-type: none;
+//	text-align: right;
+	padding: 0;
+	line-height: 40px;
 }
 
 nav ul li {
 	display: inline;
 	margin: 0 12px 0 20px;
 	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 hr {
@@ -37,7 +45,7 @@ hr {
 /*      Main Styles      */
 
 .wrapper {
-	width: 720px;
+	width: 768px;
 	margin: 0 auto;
 //	background-color: #f2f2f2;
 	padding: 15px;
@@ -53,11 +61,11 @@ a:link{
 }
 
 a:hover {
-    color: black;
+    color: #333333;
 }
 
 a:active {
-    color: black;
+    color: #333333;
 }
 
 .portfolio img {
@@ -89,8 +97,8 @@ a:active {
 span {
     display: inline-block;
     vertical-align: top;
-    padding: 10px;
-    width: 310px;
+    padding: 20px;
+    width: 360px;
     margin-bottom: 80px;
 }
 
@@ -103,7 +111,7 @@ div img {
 
 .learn-more {
 	display: inline-block;
-	padding: 15px;
+	padding: 12px 20px;
 	margin: 10px 0 0 0;
 	background-color: #008888;
 	color: #FFFFFF;
@@ -116,7 +124,7 @@ div img {
 }
 
 h2 {
-	margin: 20px 0 0 0;
+	margin: 0;
 	font-weight: 700;
 	letter-spacing: 0.5px;
 	color: #333333;
@@ -134,11 +142,13 @@ h2 {
 	nav ul{
 		text-align: center;
 		margin: 20px auto;
+		float: none;
+		width: 100%;
 	}
 
 	nav ul li{
-		margin: 20px;
-		font-size: 30px;
+		margin: 30px;
+		font-size: 40px;
 	}
 
 	nav h1 {
@@ -146,8 +156,9 @@ h2 {
 		display: block;
 		position: relative;
 		text-align: center;
-		margin-top: 20px;
-		font-size: 40px;
+		margin: 40px auto;
+		font-size: 60px;
+		width: 100%;
 	}
 
 	hr {
@@ -188,6 +199,8 @@ h2 {
 		margin: 0;
 	}
 	.learn-more {
+		margin-top: 30px;
 		display: block;
+		text-align: center;
 	}
 }
