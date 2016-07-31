@@ -1,16 +1,16 @@
-*{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+body {
+	font-size: 18px;
+	line-height: 1.5;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Nav Bar Styles */
+/*      Nav Styles      */
 
-/*probably need to fix this */
+/* need to fix this */
 nav h1 {
-	display: inline;
-	position: fixed;
-	top: 20px;
-	margin-left: 5px;
+	display: inline-block;
+	float: left;
+	margin: 20px 10px;
 }
 
 nav ul{
@@ -18,20 +18,28 @@ nav ul{
 	list-style-type: none;
 	text-align: right;
 	padding: 0;
+	display: inline-block;
+	float: right;
 }
 
 nav ul li {
 	display: inline;
 	margin: 0 12px 0 20px;
-	font-size: 1em;
+	font-size: 18px;
 }
 
-/* Main Styles */
+hr {
+	margin: 30px auto;
+	width: 100%;
+	border-color: #FFFFFF;
+}
+
+/*      Main Styles      */
 
 .wrapper {
 	width: 720px;
 	margin: 0 auto;
-	background-color: #f2f2f2;
+//	background-color: #f2f2f2;
 	padding: 15px;
 }
 
@@ -52,14 +60,14 @@ a:active {
     color: black;
 }
 
-.portfolio img, .project img  {
+.portfolio img {
 	width: 350px;
 	height: 250px;
 	margin: 5px;
 	display: inline-block;
 }
 
-.portfolio p {
+.portfolio p, {
 	width: 350px;
 	height: 250px;
 	line-height: 250px;
@@ -68,33 +76,86 @@ a:active {
 	vertical-align: top;
 }
 
-span
-{
+.project img {
+		width: 100%;
+		height: auto;
+		margin: 10px auto;
+	}
+
+.project p {
+	margin: 0 auto;
+}
+
+span {
     display: inline-block;
     vertical-align: top;
-    line-height: 20px;
     padding: 10px;
     width: 310px;
+    margin-bottom: 80px;
 }
 
 
-/*this img needs to be 1120px wide in Sketch*/
+/*this img needs to be 700 wide in Sketch*/
 div img {
 	margin: 0;
 	display: inline-block;
 }
 
-button {
-	display: block;
-	padding: 20px;
-	margin: 20px 0 60px 0;
+.learn-more {
+	display: inline-block;
+	padding: 15px;
+	margin: 10px 0 0 0;
+	background-color: #008888;
+	color: #FFFFFF;
+	font-size: 100%;
+	letter-spacing: 2px;
+}
+
+.learn-more:hover {
+	background-color: #006666;
 }
 
 h2 {
-	margin: 10px 0;
+	margin: 20px 0 0 0;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	color: #333333;
 }
-/* Responsive Desktop and Mobile between 0px and 745px */
-@media screen and (max-width: 745px), screen and (max-device-width: 745px){
+
+/* Responsive Desktop and Mobile between 0px and 768px */
+@media screen and (max-width: 768px), screen and (max-device-width: 768px){
+	
+	body {
+		font-size: 80%;
+	}
+
+	/* Nav Styles */
+
+	nav ul{
+		text-align: center;
+		margin: 20px auto;
+	}
+
+	nav ul li{
+		margin: 20px;
+		font-size: 30px;
+	}
+
+	nav h1 {
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		text-align: center;
+		margin-top: 20px;
+		font-size: 40px;
+	}
+
+	hr {
+		width: 80%;
+	}
+
+	/* Main Styles */
+
 	.wrapper {
 		width: 90%;
 	}
@@ -106,33 +167,27 @@ h2 {
 	}
 
 	.portfolio p {
-		display: inline;
 		height: auto;
 		line-height: 0px;
 	}
 
-	nav ul{
-		text-align: center;
-		margin: 40px 0;
-	}
-
-	/*need to fix font sizes*/
-	nav ul li{
-		margin: 20px;
-		font-size: 40px;
-	}
-	nav h1 {
-		margin: 0 auto;
-		display: block;
-		position: relative;
-		text-align: center;
-		margin-top: 20px;
-		font-size: 40px;
-	}
 	span {
 		width: 100%;
+		font-size: 24px;
 	}
+
 	video {
 		width: 100%;
+	}
+
+	.project p {
+		font-size: 200%;
+	}
+
+	h2 {
+		margin: 0;
+	}
+	.learn-more {
+		display: block;
 	}
 }
