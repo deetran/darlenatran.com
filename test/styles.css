@@ -171,6 +171,7 @@ h2 {
 	width: 500px;
 	display: inline-block;
 	vertical-align: top;
+	margin: 0 0 20px 0;
 }
 
 /* Responsive Desktop and Mobile between 0px and 814px */
