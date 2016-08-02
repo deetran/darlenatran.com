@@ -162,18 +162,22 @@ h2 {
 .about img {
 	display: inline-block;
 	width: 200px;
-	margin: 0 20px 0 0;
+	border: 2px solid #444444;
 }
 
 .about p {
 	width: 500px;
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 0 20px 0;
+	margin-bottom: 20px;
 }
 
 /* Responsive Desktop and Mobile between 0px and 814px */
 @media screen and (max-width: 814px), screen and (max-device-width: 814px){
+	
+	body {
+		font-size: 16px;
+	}
 
 	/*     Nav     */
 
@@ -202,7 +206,7 @@ h2 {
 
 	hr {
 		width: 90%;
-		margin: 10px auto 5px auto;
+		margin: 10px auto 20px auto;
 	}
 
 	/*     Main     */
@@ -221,7 +225,7 @@ h2 {
 	.portfolio img, .project img {
 		width: 100%;
 		height: auto;
-		margin: 10px auto;
+		margin: 0 auto 15px auto;
 	}
 
 	.portfolio p {
@@ -263,7 +267,6 @@ h2 {
 
 	.about span {
 		width: 100%;
-		font-size: 24px;
 		margin: 0 auto;
 		padding: 0;
 	}
@@ -271,32 +274,23 @@ h2 {
 	.about img {
 		display: block;
 		margin: 0 auto;
-		width: 40%;
 		height: auto;
 	}
 
 	.about h2 {
 		display: block;
-		margin: 40px auto 0 auto;
-		font-size: 60px;
-		text-align: center;
+		margin: 15px 0 0 0;
 	}
 
 	.about p {
 		width: auto;
 		display: block;
-		margin: 0 auto;
-		padding: 20px;
+		margin: 0 0 15px 0;
 	}
 
 	.about h3 {
 		display: block;
 		text-align: center;
 		margin-top: 60px;
-	}
-
-	#contact {
-		text-align: center;
-		display: block;
 	}
 }
