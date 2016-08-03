@@ -45,8 +45,8 @@ nav ul li {
 	color: #888888;
 }
 
-nav ul li a:hover {
-	border-bottom: 1px solid currentColor;
+nav ul li a {
+	border: none;
 }
 
 hr {
@@ -80,7 +80,6 @@ hr {
 #hello p {
 	margin: 0 auto;
 	width: 70%;
-	color: #888888;
 }
 
 .wrapper {
@@ -100,6 +99,7 @@ a:link{
 
 a:hover {
     color: #888888;
+	border-bottom: 1px solid currentColor;
 }
 
 a:active {
@@ -126,6 +126,10 @@ h2 {
 	width: 350px;
 	height: auto;
 	display: inline-block;
+}
+
+.portfolio a {	
+	border: none;
 }
 
 .portfolio p, {
@@ -162,6 +166,8 @@ h2 {
 	border: 1px solid #009999;
 	font-size: 100%;
 	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .btn:hover {
@@ -184,6 +190,10 @@ h2 {
 	height: auto;
 }
 
+.project a {
+	border-bottom: 1px solid currentColor;
+}
+
 .project p {
 	margin: 0 0 15px 0;
 }
@@ -197,6 +207,17 @@ h2 {
 	width: 100%;
 	border: 1px solid #EEEEEE;
 }
+
+.phone-img-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.phone-img-wrapper img {
+	width: 230px;
+	margin: 5px;
+}
+
 /*     About Me     */
 
 .about span {
@@ -228,6 +249,16 @@ h2 {
 .misc h2 {
 	text-align: center;
 	margin: 0 auto;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	margin: -10px 0 10px 10px;
+	font-size: 16px;
+	color: #888888;
 }
 
 /* Responsive Desktop and Mobile between 0px and 814px */
@@ -315,7 +346,7 @@ h2 {
 	    width: 100%;
 	}
 
-	.learn-more {
+	.btn {
 		margin-top: 15px;
 		padding: 12px 0;
 		text-align: center;
@@ -332,6 +363,16 @@ h2 {
 		margin: 20px 0 0 0;
 	}
 
+	figcaption {
+		margin: -20px 0 10px 5px;
+		font-size: 14px;
+		color: #888888;
+	}
+
+	.phone-img-wrapper img {
+		width: 200px;
+		margin: 0 auto;
+	}
 	/*     About Me     */
 
 	.about span {
@@ -362,4 +403,5 @@ h2 {
 		text-align: center;
 		margin-top: 60px;
 	}
+
 }
