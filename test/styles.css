@@ -220,6 +220,16 @@ h2 {
 	margin-bottom: 20px;
 }
 
+.misc img {
+	width: 80%;
+	margin: 10%;
+}
+
+.misc h2 {
+	text-align: center;
+	margin: 0 auto;
+}
+
 /* Responsive Desktop and Mobile between 0px and 814px */
 @media screen and (max-width: 814px), screen and (max-device-width: 814px){
 	
