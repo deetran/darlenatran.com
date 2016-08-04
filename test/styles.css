@@ -5,6 +5,14 @@ body {
 	color: #555555;
 }
 
+@font-face {
+    font-family: 'mission_scriptregular';
+    src: url('mission-script-webfont.woff2') format('woff2'),
+         url('mission-script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*     Nav     */
 
 nav h1 {
@@ -13,9 +21,9 @@ nav h1 {
 	margin: 20px 10px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	color: #333333;
-	line-height: 40px;
-	font-size: 32px;
+	line-height: 36px;
+	font-size: 36px;
+	font-family: 'mission_scriptregular', sans-serif;
 }
 
 nav h1 a:hover {
@@ -61,13 +69,8 @@ hr {
 #hello {
 	text-align: center;
 	display: block;
-//	position: absolute;
-//	top: 104px;
-//	left: 0px;
-	padding: 20px 0;
 	width: 100%;
-//	margin: -31px 0 30px 0;
-	margin: -20px auto 20px auto
+	margin: 40px auto;
 }
 
 #hello h1 {
@@ -80,6 +83,7 @@ hr {
 #hello p {
 	margin: 0 auto;
 	width: 70%;
+	color: #888888;
 }
 
 .wrapper {
@@ -289,7 +293,7 @@ figcaption {
 		display: block;
 		margin: 0 auto;
 		text-align: center;
-		font-size: 24px;
+		font-size: 32px;
 		width: 100%;
 	}
 
@@ -299,13 +303,17 @@ figcaption {
 	}
 
 	/*     Main     */
+
 	#hello {
-		padding: 10px 0;
-		margin: 10px;
+		margin: 25px 0;
 	}
 
 	#hello h1 {
-		font-size: 20px;
+		font-size: 21px;
+	}
+
+	#hello p {
+		font-size: 14px;
 	}
 
 	.wrapper {
