@@ -16,13 +16,11 @@ body {
 /*     Nav     */
 
 nav h1 {
-	display: inline-block;
 	float: left;
-	margin: 20px 10px;
 	font-weight: 700;
-	letter-spacing: 1px;
 	line-height: 36px;
 	font-size: 36px;
+	margin: 25px 20px;
 	font-family: 'mission_scriptregular', sans-serif;
 }
 
@@ -38,7 +36,7 @@ nav h1 a {
 nav ul{
 	display: inline-block;
 	float: right;
-	margin: 20px 10px;
+	margin: 26px 10px 10px 10px;
 	list-style-type: none;
 	padding: 0;
 	line-height: 40px;
@@ -260,7 +258,7 @@ figure {
 }
 
 figcaption {
-	margin: -10px 0 10px 10px;
+	margin: -5px 0 30px 10px;
 	font-size: 16px;
 	color: #888888;
 }
