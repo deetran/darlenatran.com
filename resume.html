@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Darlena Tran's Portfolio</title>
+	<meta name="description" content="Darlena Trans's Portfolio">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<!-- End Basic Page Needs -->
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- End Mobile Specific Metas -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="skeleton.css">
+	<link rel="stylesheet" href="layout.css">
+	<!-- End CSS -->
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
+	<!-- End Google Fonts -->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!--	
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<!-- End Favicons -->
+	
+	<!-- Sticky Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.sticky.js"></script>
+	<script>
+		$(window).load(function(){
+			$("nav").sticky({ topSpacing: 0 });
+		});
+	</script>
+	<!-- End Sticky Nav -->
+	
+	<!-- Analytics -->
+	<script type="text/javascript">
+				
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-44924854-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+		window.onload = function() {
+			var links = document.getElementsByTagName("a");
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				link.onmouseover = function() {
+					this.setAttribute("org_title", this.title);
+					this.title = "";
+				};
+				link.onmouseout = function() {
+					this.title = this.getAttribute("org_title");
+				};
+			}
+		};
+	</script>
+	<!-- End Analytics -->
+	
+</head>
+<body>
+
+
+
+
+	<!-- Primary Page Layout -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+	<header>
+		<nav>
+			<ul>	
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li class="current"><a href="resume.html">RESUMÉ</a></li>
+				<li><a href="index.html">PORTFOLIO</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Resumé Section -->
+
+<div class="container">
+	<div class="fourteen columns resume offset-by-one">
+			<h2 style="margin-top: 90px"><strong>Education</strong></h2>
+			<p>
+				<h4 class="left">Rice University<br>
+				B.A. Cognitive Science <br></h4>
+				<h4 class="right">(Class of 2015)</h4>
+					<ul>
+						Relevant Courseload: Human Factors and Ergonomics, Human-Computer Interaction, Methods in HCI, Non-Traditional Interfaces, Cognitive Psychology, Computational Thinking (Python), Computer Applications for Psychology Experiments (Javascript)
+					</ul>
+			</p>
+			
+			<h2><strong>Skills</strong></h2>
+			<p>
+				<ul>
+				- Adobe Photoshop and Illustrator<br>
+				- Programming Languages (HTML5, CSS3, Javascript, R)<br>
+				- Survey design, task flows, heuristic evaluations<br>
+				- Mockups, wireframes, low/high fidelity prototypes<br>
+				- English (Native)<br>
+				- French (Working Proficiency)<br>
+				- Vietnamese (Conversational)<br>
+				</ul>
+			</p>			
+			
+			<h2><strong>Work Experience</strong></h2>
+			<p>
+				<h4 class="left">Rice University Psychology Department<br>
+				Undergraduate Research Assistant<br></h4>
+				<h4 class="right">(Sep '14 - Present)</h4>
+					<ul>
+						- Research assistant to Professor Philip Kortum in the Psychology Department<br>
+						- Analyze data from System Usability Scale (SUS) surveys sent to patients with disabilities<br>
+						- Conduct research on and offer suggestions for improvement to the SUS
+					</ul>
+				<h4 class="left">Rice University IT Department<br>
+				Student Computing Consultant<br></h4>
+				<h4 class="right">(Oct '12 - Aug '14)</h4>
+					<ul>
+						- Provided technical support for issues concerning computer software and hardware<br>
+						- Utilized an online support ticket system to provide clear communication to customers and co-workers<br>
+						- Strategized with senior support staff on projects seeking to increase efficiency at solving IT issues
+					</ul>
+				<h4 class="left">Kindle Interactive<br>
+				Design Intern<br></h4>
+				<h4 class="right">(Feb '13 - Oct '13)</h4>
+					<ul>
+						- Was the lead designer for the re-branding of The Rice Village<br>
+						- Worked with 7 clients on branding, print, and UI/UX design projects<br>
+						- Collaborated with 3 other designers to critique and receive feedback on designs
+					</ul>
+				<h4 class="left">SoundControl<br>
+				Co-founder<br></h4>
+				<h4 class="right">(Sep '12 - May '13)</h4>
+					<ul>
+						- Designed identity, website, and business cards<br>
+						- Performed market validation via surveys and interviews from potential customers<br>
+						- Pitched the mobile app's concept to potential investors and partners
+					</ul>
+				<h4 class="left">The Rice Thresher<br>
+				Graphic Designer<br></h4>
+				<h4 class="right">(Feb '12 - Oct '12)</h4>
+					<ul>
+						- Designed graphics for the campus newspaper based on a creative brief<br>
+						- Applied knowledge of Adobe Illustrator and Photoshop software to create visual graphics
+					</ul>
+			</p>
+			
+			<h2><strong>Activities</strong></h2>
+			<p>
+				<h4 class="left">Design for America<br></h4>
+				<h4 class="right">(Sept '13 - Dec '13)</h4>
+					<ul>
+						- Worked with a team to develop a design for pain-free glucose monitoring<br>
+						- Sketched and designed mechanism as well as fulfilled other visual design needs<br>
+						- Contributed to research and ideation of a minimum viable product for a glucose monitor
+					</ul>
+				<h4 class="left">Rice Business Collaborative for Entrepreneurship<br></h4>
+				<h4 class="right">(Aug '12 - May '13)</h4>
+					<ul>
+						- Organized the 4th Annual Rice Elevator Pitch Competition comprised of nearly 40 teams<br>
+						- Worked with Rice administration to acquire necessary materials and work out event logistics<br>
+						- Presented at information sessions to advise and inform potential competitors
+					</ul>
+				<h4 class="left">Houston Startup Weekend<br></h4>
+				<h4 class="right">(Nov '12)</h4>
+					<ul>
+						- Collaborated with a team to propose a lean startup venture within 54 hours<br>
+						- Created identity package for LoanHoot including logo, name, and website prototype<br>
+						- Won 2nd place out of 12 teams and nearly 70 participants
+					</ul>
+				<h4 class="left">Rice University Google Guide<br></h4>
+				<h4 class="right">(June '12 - Aug '12)</h4>
+					<ul>
+						- Beta-tested the migration of Rice’s undergraduate email database to Gmail<br>
+						- Provided troubleshooting feedback over weekly Skype meetings
+					</ul>
+				<h4 class="left">Rice University Student Association<br></h4>
+				<h4 class="right">(Aug '11 - May '12)</h4>
+					<ul>
+						- Represented the student body by voting on administrative changes<br>
+						- Voted to approve or deny extracurricular clubs or activities<br>
+						- Collaborated with a team of students to present a research project aspiring to improve student quality of life
+					</ul>
+			</p>
+	</div>
+</div>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

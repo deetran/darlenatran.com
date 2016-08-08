@@ -78,86 +78,56 @@
 		};
 	</script>
 	<!-- End Analytics -->
-
+	
 </head>
-<body>
+<body style="background-color: #F2F2F2;">
 
-
-	<!-- Portfolio -->
-
+	<!-- Navigation -->
 	<header>
 		<nav>
 			<ul>	
-				<li><a href="contact.html">CONTACT</a></li>
+				<li class="current"><a href="contact.html">CONTACT</a></li>
 				<li><a href="about.html">ABOUT</a></li>
 				<li><a href="resume.html">RESUMÉ</a></li>
-				<li class="current"><a href="index.html">PORTFOLIO</a></li>
+				<li><a href="index.html">PORTFOLIO</a></li>
 			</ul>
 		</nav>
 	</header>
-	
-	<div class="container">
-	
-	<!-- UI/UX -->
-		<div class="sixteen columns" style="margin-bottom: 30px">
-			<h1 style="margin-top: 90px; text-align: center;">UI / UX</h1>
-			<p style="text-align:center">Really in love with this stuff.</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="paystation.html">
-				<img src="img/covers/paystation_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin-top: -30px; text-align: center;">Parking Pay Station Project</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="ticketsnap.html">
-				<img src="img/covers/TS_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin: -30px 0 150px 0; text-align: center;">TicketSnap Mobile App Concept</p>
-		</div>
-	<!-- End UI/UX -->	
-	<hr>
-	<!-- Javascript -->
-		<div class="sixteen columns" style="margin-bottom: 30px">
-			<h1 style="margin-top: 90px; text-align: center;">Javascript</h1>
-			<p style="text-align:center">Fun to play with and good to know.</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="memory-experiment.html">
-				<img src="img/covers/memory_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin-top: -30px; text-align: center;">Memory Recall Experiment</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="illusory-pausing.html">
-				<img src="img/covers/illusory_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin: -30px 0 150px 0; text-align: center;">Illusory Pausing Demonstration</p>
-		</div>
-	<!-- End Javascript -->	
-	<hr>
-	<!-- Graphic Design -->
-		<div class="sixteen columns" style="margin-bottom: 30px">
-			<h1 style="margin-top: 90px; text-align: center;">Graphic Design</h1>
-			<p style="text-align:center">Some fun graphics I've made.</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="rice-village.html">
-				<img src="img/covers/RV_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin-top: -30px; text-align: center;">Rice Village Redesign</p>
-		</div>
-		<div class="eight columns">
-			<a href="thresher.html">
-				<img src="img/covers/thresher_cover.png" class="scale-with-grid cover">
-			</a>
-			<p style="margin: -30px 0 150px 0; text-align: center;">Rice Thresher Graphics</p>
-		</div>
-	<!-- End Graphic Design -->	
-	</div>
-	
+	<!-- End Navigation -->
 
-<!-- End Portfolio -->
-	
+<div class="container">
+	<div class="fourteen columns contact offset-by-one">
+		<h2 style="margin-top: 90px"><strong>Get in Touch!</strong></h2>
+		<p>I'd love to hear from you. </p>
+		<p style="margin-top: 50px">Feel free to email me directly at <a href="hello@darlenatran.com">hello@darlenatran.com</a> or use the nifty contact form below.</p>
+	<!-- Contact Form -->
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="hello@darlenatran.com">Send Your Email</a>
+                </p>
+                
+                <div id="response">
+                </div>
+				
+            </form>
+	</div>
+</div>
+    <!-- End Contact Form -->
+		
+	</div>
+</div>
+
+
+<!-- End Document
+================================================== -->
 </body>
 </html>

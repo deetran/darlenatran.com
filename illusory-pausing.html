@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Darlena Tran's Portfolio</title>
+	<meta name="description" content="Darlena Trans's Portfolio">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<!-- End Basic Page Needs -->
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- End Mobile Specific Metas -->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="skeleton.css">
+	<link rel="stylesheet" href="layout.css">
+	<!-- End CSS -->
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
+	<!-- End Google Fonts -->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!--	
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<!-- End Favicons -->
+	
+	<!-- Sticky Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.sticky.js"></script>
+	<script>
+		$(window).load(function(){
+			$("nav").sticky({ topSpacing: 0 });
+		});
+	</script>
+	<!-- End Sticky Nav -->
+	
+	<!-- Analytics -->
+	<script type="text/javascript">
+				
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-44924854-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+		window.onload = function() {
+			var links = document.getElementsByTagName("a");
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				link.onmouseover = function() {
+					this.setAttribute("org_title", this.title);
+					this.title = "";
+				};
+				link.onmouseout = function() {
+					this.title = this.getAttribute("org_title");
+				};
+			}
+		};
+	</script>
+	<!-- End Analytics -->
+	
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+
+	/* 
+
+	Illusory Sticking and Pausing Perceptual Illusion by Darlena Tran.
+	Special thanks to Emma Breen.
+
+	Research by D. Goldberg and J. Pomerantz.
+	Goldberg, D M, Goldberg, J R, & Pomerantz. (1982). Models of illusory pausing and sticking. Journal of experimental psychology. Human perception and performance, 8(4), 547-561.
+
+	http://psycnet.apa.org.ezproxy.rice.edu/journals/xhp/8/4/547/
+
+	*/
+
+	var opacity = 1;
+	var speed = 1;
+	var start_var = 0;
+	function start(x,y){
+		// Make canvas.
+		var canvas = document.getElementById("canvas");
+		
+		// Set as a 2D canvas.
+		var ctx = canvas.getContext("2d")
+		ctx.save();
+		
+		// Make a clear white rectangle for a background.
+		ctx.clearRect(0,0,400,400);
+		
+		// Sets the color of shapes as white.
+		ctx.fillStyle = "rgba(255,255,255," + opacity + ")";
+		
+		// Controls shifting of frames.
+		var interval = 500 * Math.floor(x/500);
+		var origInterval = interval;
+		for (var interval; interval < origInterval + 1000; interval += 50) {
+			drawBalls(ctx, x + 500 - interval, y + 500 - interval);
+		}	
+		
+		ctx.restore();
+		
+		// Moves the balls.
+		x += speed; 
+		y += speed;	
+		
+		// Change variable 'start_var' to non-zero to prevent errors when clicking start button more than once
+		start_var = 1;
+		
+		// Start timer.
+		var loopTimer = setTimeout("start("+x+","+y+")", 30);
+		}
+
+	var r = 10;
+	function drawBalls(ctx, x, y) {
+
+		// Makes 9 balls going down.
+		for (var counter=1;counter<=9;counter++) {
+			ctx.beginPath();
+			ctx.arc(counter*100,500-y,r,0,2*Math.PI);
+			ctx.fill();
+		}
+		
+		// Makes one ball going diagonally.
+		for (var counter=1;counter<=9;counter++) {
+			ctx.beginPath();
+			ctx.arc(x - 500 + 100 * counter,y,r,0,2*Math.PI);
+			ctx.fill();
+		}
+		
+		// Makes one ball going diagonally.
+		for (var counter=1;counter<=9;counter++) {
+			ctx.beginPath();
+			ctx.arc((500 - x) - 500 + 100 * counter,y,r,0,2*Math.PI);
+			ctx.fill();
+		}
+	}
+
+	function startButton() {
+		if (start_var==0) {
+			start(0,0);
+		}
+		else {
+			alert("The program has already started.");
+		}
+	}
+
+	function incrSpeed(spd) {
+		speed++;
+		document.getElementById("speed_para").innerHTML = "Speed: " + speed;
+		drawBalls(ctx, 0, 0);
+	}
+
+	function decrSpeed(spd) {
+		speed--;
+		document.getElementById("speed_para").innerHTML = "Speed: " + speed;
+		drawBalls(ctx, 0, 0);
+	}
+
+	function incrSize(size) {
+		r++;
+		document.getElementById("size_para").innerHTML = "Size: " + r;
+		drawBalls(ctx, 0, 0);
+	}
+
+	function decrSize(size) {
+		if (r==0) {
+			r=0;
+		} else {
+			r--;
+			document.getElementById("size_para").innerHTML = "Size: " + r;
+			drawBalls(ctx, 0, 0);
+		}
+	}
+
+	function incrOpacity(opa) {
+		if (opacity >=1) {
+			opacity=1;
+			document.getElementById("opacity_para").innerHTML = "Opacity: " + opacity.toFixed(1);
+		} else {
+			opacity = opacity+0.1;
+			document.getElementById("opacity_para").innerHTML = "Opacity: " + opacity.toFixed(1);
+			drawBalls(ctx, 0, 0);
+		}
+	}
+
+	function decrOpacity(opa) {
+		if (opacity<=0) {
+			opacity=0;
+			document.getElementById("opacity_para").innerHTML = "Opacity: " + opacity.toFixed(1);
+		} else {
+			opacity = opacity-0.1;
+			document.getElementById("opacity_para").innerHTML = "Opacity: " + opacity.toFixed(1);
+			drawBalls(ctx, 0, 0);
+		}
+	}
+
+	</script>
+</head>
+
+<body>
+<header>
+		<nav>
+			<ul>	
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="resume.html">RESUMÉ</a></li>
+				<li class="current"><a href="index.html">PORTFOLIO</a></li>
+			</ul>
+		</nav>
+</header>
+
+<div style="display:block; margin: 0 auto; text-align:center;">
+	<canvas style="display:inline-block; margin: 20px 0px;" id="canvas" width="400" height="400">
+	</canvas>
+	<div style="display:inline-block; vertical-align:top; margin-left: 20px;">
+		<p id="speed_para">Speed: 1</p>
+			<button onclick="decrSpeed(speed);">Decrease Speed</button><button onclick="incrSpeed(speed);" style="font family: serif">Increase Speed</button>
+		<p id="size_para">Size: 10</p>
+			<button onclick="decrSize(r);">Decrease Size</button><button onclick="incrSize(r);">Increase Size</button>
+		<p id="opacity_para">Opacity: 1</p>
+			<button onclick="decrOpacity(opacity);">Decrease Opacity</button><button onclick="incrOpacity(opacity);">Increase Opacity</button>
+		<br>
+		<br>
+			<button onclick="startButton();">Start</button>
+	</div>
+	<div class="eight columns">
+		<p style="line-height: 24px">
+			Shown is a visual representation of the phenomenon known as illusory pausing. This was designed as a project for my Psychology of Perception class. Goldberg & Pomerantz discovered that when dots move towards each other at a constant velocity, we briefly perceive that the dots pause when they meet and appear to merge into one dot. The optimal settings at which people can see this illusion varies depending the speed, size, and opacity of the dots, so settings have been made available for the user to adjust. You can read more about this research <a href="http://www.ncbi.nlm.nih.gov/pubmed/6214607" target="_blank">here</a>.
+		</p>
+	</div>
+</div>
+</body>
+</html>
