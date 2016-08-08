@@ -96,7 +96,7 @@ a{
 }
 
 a:link{
-	color: #008888;
+	color: #333333;
 }
 
 a:hover {
@@ -105,7 +105,7 @@ a:hover {
 }
 
 a:active {
-    color: #444444;
+    color: #333333;
 }
 
 h3 {
