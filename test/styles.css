@@ -18,8 +18,6 @@ body {
 nav h1 {
 	float: left;
 	font-weight: 700;
-	font-kerning: normal;
-	letter-spacing: normal;
 	line-height: 36px;
 	font-size: 36px;
 	margin: 25px 20px;
@@ -297,7 +295,9 @@ figcaption {
 		text-align: center;
 		font-size: 32px;
 		width: 100%;
-		font-weight: default;
+		font-kerning: normal;
+		font-weight: 700;
+		font-style: normal;
 	}
 
 	hr {
