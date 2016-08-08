@@ -1,163 +1,83 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+<!doctype html>
 
-	<!-- Basic Page Needs -->
+<html lang="en">
+
+<head>
 	<meta charset="utf-8">
-	<title>Darlena Tran's Portfolio</title>
+	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<meta name="description" content="Darlena Trans's Portfolio">
 	<meta name="keywords" content="designer portfolio ui ux mobile interface">
 	<meta name="author" content="Darlena Tran">
-	<!-- End Basic Page Needs -->
-
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- End Mobile Specific Metas -->
-	
-	<!-- CSS -->
-	<link rel="stylesheet" href="base.css">
-	<link rel="stylesheet" href="skeleton.css">
-	<link rel="stylesheet" href="layout.css">
-	<!-- End CSS -->
-	
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
-	<!-- End Google Fonts -->
-	
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<!--	
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<!-- End Favicons -->
-	
-	<!-- Sticky Nav -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.sticky.js"></script>
-	<script>
-		$(window).load(function(){
-			$("nav").sticky({ topSpacing: 0 });
-		});
-	</script>
-	<!-- End Sticky Nav -->
-	
-	<!-- Analytics -->
-	<script type="text/javascript">
-				
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-44924854-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-		window.onload = function() {
-			var links = document.getElementsByTagName("a");
-			for (var i = 0; i < links.length; i++) {
-				var link = links[i];
-				link.onmouseover = function() {
-					this.setAttribute("org_title", this.title);
-					this.title = "";
-				};
-				link.onmouseout = function() {
-					this.title = this.getAttribute("org_title");
-				};
-			}
-		};
-	</script>
-	<!-- End Analytics -->
-
+	<title>Darlena Tran's Portfolio</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-
-
-	<!-- Portfolio -->
-
-	<header>
+	<div class="wrapper">
 		<nav>
-			<ul>	
-				<li><a href="contact.html">CONTACT</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="resume.html">RESUMÉ</a></li>
-				<li class="current"><a href="index.html">PORTFOLIO</a></li>
+			<h1>
+				<a href="index.html">Darlena Tran</a>
+			</h1>
+			<ul>
+				<li><a:active href="">Portfolio</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="darlena-tran-resume.pdf" target="_blank">Resumé</a></li>
 			</ul>
 		</nav>
-	</header>
-	
-	<div class="container">
-	
-	<!-- UI/UX -->
-		<div class="sixteen columns" style="margin-bottom: 30px">
-			<h1 style="margin-top: 90px; text-align: center;">UI / UX</h1>
-			<p style="text-align:center">Really in love with this stuff.</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="paystation.html">
-				<img src="img/covers/paystation_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin-top: -30px; text-align: center;">Parking Pay Station Project</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="ticketsnap.html">
-				<img src="img/covers/TS_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin: -30px 0 150px 0; text-align: center;">TicketSnap Mobile App Concept</p>
-		</div>
-	<!-- End UI/UX -->	
-	<hr>
-	<!-- Javascript -->
-		<div class="sixteen columns" style="margin-bottom: 30px">
-			<h1 style="margin-top: 90px; text-align: center;">Javascript</h1>
-			<p style="text-align:center">Fun to play with and good to know.</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="memory-experiment.html">
-				<img src="img/covers/memory_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin-top: -30px; text-align: center;">Memory Recall Experiment</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="illusory-pausing.html">
-				<img src="img/covers/illusory_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin: -30px 0 150px 0; text-align: center;">Illusory Pausing Demonstration</p>
-		</div>
-	<!-- End Javascript -->	
-	<hr>
-	<!-- Graphic Design -->
-		<div class="sixteen columns" style="margin-bottom: 30px">
-			<h1 style="margin-top: 90px; text-align: center;">Graphic Design</h1>
-			<p style="text-align:center">Some fun graphics I've made.</p>
-		</div>
-		<div class="eight columns cover">
-			<a href="rice-village.html">
-				<img src="img/covers/RV_cover.png" class="scale-with-grid">
-			</a>
-			<p style="margin-top: -30px; text-align: center;">Rice Village Redesign</p>
-		</div>
-		<div class="eight columns">
-			<a href="thresher.html">
-				<img src="img/covers/thresher_cover.png" class="scale-with-grid cover">
-			</a>
-			<p style="margin: -30px 0 150px 0; text-align: center;">Rice Thresher Graphics</p>
-		</div>
-	<!-- End Graphic Design -->	
-	</div>
-	
 
-<!-- End Portfolio -->
-	
+		<hr>
+
+		<div id="hello">
+			<h1>Hi! Nice to E-Meet You.</h1>
+			<p>I'm a user-friendly designer in love with turning complex problems into intuitive, elegant solutions.</p>
+		</div>
+
+		<hr>
+
+		<div class="portfolio wrapper-padding">
+			<div class="project-wrapper">
+				<a class="no-line-height" href="chronopod.html"><img src="img/chronopod-cover.png"></img></a>
+				<div class="description">
+					<h2>Chronopod (Mobile)</h2>This app concept is a result of a 72-hour solo design challenge to create a time travel app. My responsibilities included scoping the product, defining the persona, research, wireframing, and hi-fi designs.
+					<a href="chronopod.html"><div class="btn learn-more">LEARN MORE → </div></a>
+				</div>
+			</div>
+
+			<div class="project-wrapper">
+				<a class="no-line-height" href="analytics-app.html"><img src="img/analytics-cover.png"></img></a>
+				<div class="description">
+					<h2>Analytics App (Mobile)</h2>A challenging project to provide a mobile user with the ability to analyze complex charts and graphs. My contributions to the project included wireframing, documentating gesture interactions, and hi-fi designs.
+					<a href="analytics-app.html"><div class="btn learn-more">LEARN MORE → </div></a>
+				</div>
+			</div>
+
+			<div class="project-wrapper">
+				<a class="no-line-height" href="forecaster.html"><img src="img/forecaster-cover.png"></img></a>
+				<div class="description">
+					<h2>Forecaster (Desktop)</h2>This web app was built for very analytical desktop users. I was responsible for collaborating with product managers, understanding the dev team's technical constraints, and redesigning the main interface.
+					<a href="forecaster.html"><div class="btn learn-more">LEARN MORE → </div></a>
+				</div>
+			</div>
+
+			<div class="project-wrapper">
+				<a class="no-line-height" href="hci-methods.html"><img src="img/hci-methods-cover.png"></img></a>
+				<div class="description">
+					<h2>HCI Methods Project</h2>This was a group design project for a course in HCI methods at Rice University. Our group was tasked with improving the usability of surface parking pay station interfaces.
+					<a href="hci-methods.html"><div class="btn learn-more">LEARN MORE → </div></a>
+				</div>
+			</div>
+
+			<div class="project-wrapper">
+				<a class="no-line-height" href="misc.html"><img src="img/misc-cover.png"></img></a>
+				<div class="description">
+					<h2>Miscellaneous</h2>Random design tidbits that I made to practice my skills and/or just to have fun. Included are Daily UI challenges, graphic design projects, and more.
+					<a href="misc.html"><div class="btn learn-more">LEARN MORE → </div></a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 </body>
 </html>

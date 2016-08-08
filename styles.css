@@ -240,7 +240,6 @@ h2 {
 	width: 500px;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 20px;
 }
 
 .misc img {
@@ -296,7 +295,7 @@ figcaption {
 		font-size: 32px;
 		width: 100%;
 		font-weight: 400;
-		color: #222222;
+		color: #000000;
 	}
 
 	hr {
