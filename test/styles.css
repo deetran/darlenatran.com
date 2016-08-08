@@ -295,7 +295,7 @@ figcaption {
 		text-align: center;
 		font-size: 32px;
 		width: 100%;
-		letter-spacing: -0.5px;
+		letter-spacing: -1px;
 	}
 
 	hr {
