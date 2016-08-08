@@ -18,6 +18,8 @@ body {
 nav h1 {
 	float: left;
 	font-weight: 700;
+	font-kerning: normal;
+	letter-spacing: normal;
 	line-height: 36px;
 	font-size: 36px;
 	margin: 25px 20px;
@@ -96,7 +98,7 @@ a{
 }
 
 a:link{
-	color: #333333;
+	color: #008888;
 }
 
 a:hover {
