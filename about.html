@@ -1,123 +1,46 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!doctype html>
+
+<html lang="en">
+
 <head>
-
-	<!-- Basic Page Needs -->
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<title>Darlena Tran's Portfolio</title>
-	<meta name="description" content="Darlena Trans's Portfolio">
-	<meta name="keywords" content="designer portfolio ui ux mobile interface">
-	<meta name="author" content="Darlena Tran">
-	<!-- End Basic Page Needs -->
-
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- End Mobile Specific Metas -->
-	
-	<!-- CSS -->
-	<link rel="stylesheet" href="base.css">
-	<link rel="stylesheet" href="skeleton.css">
-	<link rel="stylesheet" href="layout.css">
-	<!-- End CSS -->
-	
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css">
-	<!-- End Google Fonts -->
-	
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<!--	
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<!-- End Favicons -->
-	
-	<!-- Sticky Nav -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.sticky.js"></script>
-	<script>
-		$(window).load(function(){
-			$("nav").sticky({ topSpacing: 0 });
-		});
-	</script>
-	<!-- End Sticky Nav -->
-	
-	<!-- Analytics -->
-	<script type="text/javascript">
-				
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-44924854-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-		window.onload = function() {
-			var links = document.getElementsByTagName("a");
-			for (var i = 0; i < links.length; i++) {
-				var link = links[i];
-				link.onmouseover = function() {
-					this.setAttribute("org_title", this.title);
-					this.title = "";
-				};
-				link.onmouseout = function() {
-					this.title = this.getAttribute("org_title");
-				};
-			}
-		};
-	</script>
-	<!-- End Analytics -->
-	
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-
-	<!-- Navigation -->
-
-	<header>
+	<div class="wrapper">
 		<nav>
-			<ul>	
-				<li><a href="contact.html">CONTACT</a></li>
-				<li class="current"><a href="about.html">ABOUT</a></li>
-				<li><a href="resume.html">RESUMÉ</a></li>
-				<li><a href="index.html">PORTFOLIO</a></li>
+			<h1>
+				<a href="index.html">Darlena Tran</a>
+			</h1>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a:active href="about.html">About Me</a></li>
+				<li><a href="darlena-tran-resume.pdf" target="_blank">Resumé</a></li>
 			</ul>
 		</nav>
-	</header>
-	<!-- End Navigation -->
 
-<div class="container">
-	<div class="twelve columns about offset-by-two">
-		<div>
-			<img src="img/me.png" alt="Me!" width="250px" style="display:block; margin: 90px auto 0 auto">
+		<hr>
+
+		<div class="about wrapper-padding">
+			<img src="img/me.jpg">
+			<span>
+				<h2>Hi, I'm Darlena!</h2>
+				<p>Besides being an avid video gamer and music junkie, I'm a designer with both visual (UI) and interaction (UX) design skills. Visual designers are an important part of the overall user experience. They solve accessibility issues and making sure there are meaningful affordances for the user to complete their tasks intuitively and with delight. Interaction designers dive deep into the complexities and intracacies of the problem. They consider not only the task the user is trying to achieve, but also the users' existing conceptual models, other workflows that the user partakes in, and the entire ecosystem design. The marriage of the two disciplines is what I believe results in a truly great end-to-end product. Together, they advocate for the user in different aspects and those efforts together are what make a great experience.
+				</p>
+				<p>That being said, I'm looking for a role that is more focused on interaction design. While I appreciate great visual design and enjoy doing it to an extent, time flies for me when I'm working with the nuances and intracacies of a problem. I want to engulf myself in a scenario until I find the right solution. I enjoy the challenge of working under the constraints of time and development resources. I like the tacticality of figuring out where to push my design boundaries and where energy towards a battle is better fought elsewhere. At the very end of it all, I'm a problem solver that enjoys working in and pushing the boundaries of a constrained environment. 
+				</p>
+				<h2>Design Philosophy</h2>
+				<p>My goal as a designer is twofold: I want to help people save time and allow them to spend that spare time on things they truly enjoy. Inspired by the theory that <a href="https://www.amazon.com/Catching-Fire-Cooking-Made-Human/dp/1469298708">cooking made us human</a>, I think that humans have always strived to improve the efficiency of various processes so they can spend that saved time on more interesting things. This dates back to the invention of cooking, the assembly line, and so many other breakthroughs in the name of efficiency. As humans, I believe we have an unquenchable thirst to discover more and reach farther. The process of inventing new things and innovating on existing ones is truly exciting and I feel that my role as a designer allows me this incredible opportunity. I want to help humans everywhere improve efficiency in our day-to-day activities so we can spend our time on more meaningful tasks. I feel that such innovation is fundamentally innate to us as humans.
+				</p>
+				<h2>Contact Me</h2>
+				<p>I'd love to hear from you! <br>Send me an email at <a href="mailto:hello@darlenatran.com?Subject=Hi%20Darlena!" target="_top">hello@darlenatran.com</a>
+				</p>
+			</span>
 		</div>
-		<div>
-			<h2 class="title" style="margin-bottom: 30px;">Hello! I'm Darlena Tran.</h2>					
-			<p style="text-align:left">&emsp; &emsp; I'm a senior at Rice University studying Cognitive Science with a focus in Human-Computer Interaction and User Experience Research and Design.</p>
-			<p style="text-align:left">&emsp; &emsp; I've always had an interest in the design of things and my portfolio reflects my journey and exploration in the vast design world, resulting in projects showcasing many different areas of design. My passion to create user-centered design has ultimately guided me down the User Experience career path. My dream is to join a team that shares this vision so we can create awesome tools made for awesome users.
-			</p>
-			<p style="text-align:left">
-			&emsp; &emsp; I am currently seeking job opportunities in the field of User Experience, so if you would like to contact me, please shoot me an email at <a href="mailto:hello@darlenatran.com">hello@darlenatran.com</a> or fill out the contact form <a href="contact.html">here</a>. Also, don't be shy! My inbox isn't limited to potential employers. If you'd like to offer some constructive criticism or talk about the latest trend on reddit--my inbox happily awaits.
-			</p>
-			<p style="text-align:left">
-			&emsp; &emsp; When I don't have my nose in the books or staring at a computer screen, you can find me <a href="http://twitter.com/SWHouston/status/267772631971930112/photo/1" target="_blank">hanging out with startups</a>, attending nerdy Human Factors seminars or<a href="http://thenounproject.com/deetran/"> turning words into pictures</a>. Ask me sometime about: Video games, music, or <a href="http://www.youtube.com/watch?v=vNie6hVM8ZI" target="_blank">potatoes</a>.
-			</p>
-		</div>	
 	</div>
-</div>
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>
