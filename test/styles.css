@@ -295,9 +295,8 @@ figcaption {
 		text-align: center;
 		font-size: 32px;
 		width: 100%;
-		font-kerning: normal;
-		font-weight: 700;
-		font-style: normal;
+		font-weight: 400;
+		color: #222222;
 	}
 
 	hr {
