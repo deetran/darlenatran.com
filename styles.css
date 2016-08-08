@@ -22,6 +22,7 @@ nav h1 {
 	font-size: 36px;
 	margin: 25px 20px;
 	font-family: 'mission_scriptregular', sans-serif;
+	color: #333333;
 }
 
 nav h1 a:hover {
@@ -30,6 +31,10 @@ nav h1 a:hover {
 }
 
 nav h1 a {
+	color: #333333;
+}
+
+nav h1 a:link {
 	color: #333333;
 }
 
