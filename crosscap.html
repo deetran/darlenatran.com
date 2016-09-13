@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta name="description" content="A collection of design work by Darlena Tran">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<title>Darlena Tran's Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44924854-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav>
+			<h1>
+				<a href="index.html">Darlena Tran</a>
+			</h1>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="darlena-tran-resume.pdf" target="_blank">Resumé</a></li>
+			</ul>
+		</nav>
+
+		<hr>
+
+		<div class="project wrapper-padding">
+			<img src="img/crosscap/hifi.png" style="width: 30%; margin: 0 auto; display: block;"></img>
+			<h2>Crosscap Design Challenge</h2>
+			<p>Bob’s Burgers is a brand new burger fast food chain that has 1000 restaurants across the US. Each store has between four and nine employees at any given time. Every employee needs to have three types of uniforms (main uniform, and two seasonal uniforms).</p>
+			<p>Currently, they are hiring on staff across the country and need to start shipping uniforms for their grand opening. Corporate is collecting these orders and holding them for one giant shipment to all 1000 locations from the uniform manufacturer. This process has gotten complicated and corporate has decided to create a mobile application that can collect the ordering info from each store and display it to them, so the order can be finalized and communicated to the manufacturer. The manufacturer can only send up to nine uniforms per box. So if a store orders 10 or more uniforms at once, they will be shipped in two boxes. Corporate would also like to allow for stores to re-order uniforms in the future if they hire on more employees or someone spills burger grease and destroys their uniform.</p>
+			<h2>Translating the Prompt into Requirements</h2>
+			<p>I usually start out a project by working closely with the product manager to discuss business requirements and their vision for the product. During this time, the PM and I discuss the users' needs and how the proposed product meets those needs. In general, we try to answer: <em>What is the problem we are trying to solve? Who has this problem? Why do they need it solved? </em>I tend to ask a lot of questions to better understand the problem as well as get a better sense of which direction the design should take. Since I was only provided a prompt for this project, I broke down key parts of the prompt to better digest how the requirements could affect the design.</p>
+			<ul>
+				<li><b>1000 restaurants across the US</b>: <br>Hard to manage all at once, English-speaking users
+				</li>
+				<li><b>Each store has between four and nine employees</b>: <br>4000-9000 total employees in US
+				</li>
+				<li><b>Every employee needs to have three types of uniforms</b>: <br>12000-27000 uniforms in US
+				<li><b>need to start shipping uniforms for their grand opening</b>: <br>Need uniforms to arrive on time for a really important event! Late deliveries are unacceptable.
+				</li>
+				<li><b>collecting these orders and holding them for one giant shipment to all 1000 locations</b>: <br>Why can't this be sent in multiple shipments? Would allow errors to be caught earlier if shipments sent in waves.
+				</li>
+				<li><b>corporate has decided to create a mobile application that can collect the ordering info from each store and display it to them</b>: <br>Design solution must be a mobile app and corporate would like to receive confirmation of each order.
+				<li><b>if a store orders 10 or more uniforms at once, they will be shipped in two boxes</b>: <br>This most likely matters more to the manufacturer than the store manager.
+				</li>
+				<li><b>allow for stores to re-order uniforms in the future if they hire on more employees or someone spills burger grease and destroys their uniform.</b>: <br>Two great use cases for why the user might need to return to the app
+				</li>
+			</ul>
+			<h2>Focusing on a Persona</h2>
+			<p>There's actually 3 potential personas in this scenario (store manager, manufacturer employee, and corporate employee). I think these personas are extremely important, but for the sake of time I will focus on the store manager's workflow for this exercise.</p>
+			<p>Sam is a store manager for one of Bob's Burger chains. She oversees 3-8 employees at any given time. She's responsible, which is how she earned the managerial role, and is fairly savvy with a mobile phone. Her goal is to order the necessary number of uniforms quickly so she can get back to other management duties. Because she is organized, she also wants a way to track her order to ensure the uniforms arrive in time for the grand opening.
+			</p>
+			<h2>Assumptions and User Research</h2>
+			<p>Since user research couldn't be conducted on this design exercise, some assumptions had to be drawn and applied throughout the design for this app. If this was a real project or I was given more time, these are some assumptions that I would've liked to validate:
+				<ul>
+					<li>The store manager does not care about the shipment price since corporate will verify and pay for everything.</li>
+					<li>The store manager only cares about the number of shipments so they know what to expect in terms of deliveries.</li>
+					<li>The store manager wants to be able to track their order.</li>
+				</ul>
+			</p>
+			<h2>Information Architecture and Wireframing</h2>
+			<p>I wanted to focus on two use cases in particular:
+				<ol>
+					<li>First-time user buying uniforms for the first time</li>
+					<li>Returning user to buy uniforms for new hire(s) or replace damaged uniforms</p>
+				</ol>
+				See below for the site map and wireframes of the app.
+			</p>
+			<figure>
+				<img src="img/crosscap/site-map.png"></img>
+				<figcaption><center>Site map of the BOB app.</center></figcaption>
+			</figure>
+			<figure>
+			<div class="phone-img-wrapper">
+				<img src="img/crosscap/1-quantity.png"></img>
+				<img src="img/crosscap/1-review-order.png"></img>
+				<img src="img/crosscap/1-success.png"></img>
+				<figcaption>Screens from the first-time user workflow.</figcaption>
+			</div>
+			</figure>
+			<figure>
+			<div class="phone-img-wrapper">
+				<img src="img/crosscap/2-quantity.png"></img>
+				<img src="img/crosscap/2-review-order.png"></img>
+				<img src="img/crosscap/2-success.png"></img>
+				<figcaption>Screens from the returning user workflow.</figcaption>
+			</div>
+			</figure>
+			<p><a href="img/crosscap/wireframes.pdf" class="btn">View all wireframes</a></p>
+			<h2>High-fidelity design</h2>
+				<img src="img/crosscap/hifi.png" style="width: 50%; margin: 0 auto; display: block;"></img>
+			<h2>If I had more time...</h2>
+			<p>
+				<ol>
+					<li>Mobile notifications alerting the user to order by a certain date to get uniforms in time for the grand opening and/or other events.</li>
+					<li>Explore ideas to broaden the scope beyond uniforms. Think orders for napkins, condiments, to-go boxes, pots, pans... The opportunites are endless!</li>
+					<li>Build out BOB's branding to be more of a mascot character that guides you through the experience.</li>
+				</ol>
+			</p>
+			<p>
+				Thank you for your time!
+			</p>
+			<hr>
+			<a href="index.html"><div class="btn back-to-portfolio"> ← BACK TO PORTFOLIO</div></a>
+		</div>
+	</div>
+</body>
+</html>
