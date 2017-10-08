@@ -27,16 +27,14 @@
   top:0px;
   width:1440px;
   height:1099px;
-  font-family:'OpenSans', 'Open Sans';
-  font-weight:400;
-  font-style:normal;
 }
 #u0_text {
   border-width:0px;
   position:absolute;
-  left:2px;
-  top:540px;
-  width:1436px;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
   word-wrap:break-word;
 }
 #u1 {
@@ -2345,6 +2343,7 @@
   width:38px;
   word-wrap:break-word;
 }
+<<<<<<< HEAD:rental/files/home/styles.css
 #u75 {
   border-width:0px;
   position:absolute;
@@ -3408,3 +3407,5 @@
   width:148px;
   word-wrap:break-word;
 }
+=======
+>>>>>>> parent of ba0a11a... fixed rental prototype:rental/files/index/styles.css
