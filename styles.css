@@ -120,7 +120,13 @@ h3 {
 h2 {
 	margin: 0;
 	font-weight: 700;
+	letter-spacing: 0.5px;
 	color: #333333;
+}
+
+.description h2 {
+	letter-spacing: 0px;
+	font-weight: 600;
 }
 
 .wrapper-padding {
@@ -331,6 +337,7 @@ figcaption {
 	h2 {
 		margin: 0;
 		font-size: 24px;
+		letter-spacing: 0.5px;
 	}
 
 	/*     Portfolio     */
