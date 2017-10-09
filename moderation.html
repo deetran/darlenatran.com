@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta name="description" content="A collection of design work by Darlena Tran">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<title>Darlena Tran's Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44924854-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav>
+			<h1>
+				<a href="index.html">Darlena Tran</a>
+			</h1>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="darlena-tran-resume.pdf" target="_blank">Resumé</a></li>
+			</ul>
+		</nav>
+
+		<hr>
+
+		<div class="project wrapper-padding">
+			<img src="img/moderation-cover.png"></img>
+			<h2>Automated Moderation Project Overview</h2>
+			<p>At Disqus, we want comments to be a fun and constructive way for publishers to communicate with their audience. Unfortunately, as publisher popularity increases, the volume of comments increases, and moderation can become a burden. Some publishers spend hours moderating hundreds of comments a day. In an effort to reduce this cost and resurface the value of comments, I wanted to design a solution that could save moderators time while maintaining the moderation preferences of each unique publisher. For this project, I was the lead product designer responsible for user research, interaction design, and visual design as well as some project management.</p>
+			<p><strong>Problem:</strong> Publishers with a large volume of comments can become overwhelmed by the burden of moderation. Time spent moderating can often obfuscate the value of comments.</p>
+			<p><strong>Solution:</strong> Through a series of iterative research and design phases, we are designing a way for moderators to establish custom moderation rules that assign automatic actions on comments with a defined set of characteristics.</p>
+			<h2>Where did the idea come from?</h2>
+			<p>The cost of moderating comments is an obstacle that the Disqus team has been aware of and considering how to tackle for quite some time. However, the Automated Moderation project actually stemmed from our initiative to combat toxicity on our network. Based off of our understanding of moderators from previous user research, I organized some design sprint exercises for myself and the team to sort through what we know.</p>
+			<figure>
+				<img src="img/moderation/user-stories.png"></img>
+				<figcaption>User stories for a publisher, moderator, commenter, and Disqus.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/moderation/problems.png"></img>
+				<figcaption>Myself and team brainstorming problems for each user group.</figcaption>
+			</figure>
+			<h2>User interviews with moderators</h2>
+			<p>Taking the user stories and problems we generated from these exercises, I sketched out a bunch of different concepts (along with <a href="https://help.disqus.com/customer/en/portal/articles/2804915-shadow-banning" target="_blank">shadow banning</a>, <a href="https://help.disqus.com/customer/en/portal/articles/2806737-timeouts" target="_blank">timeouts</a>, <a href="https://help.disqus.com/customer/en/portal/articles/1450364-comment-policy" target="_blank">comment policy</a>, and more that have since been implemented) and presented them to moderators to see what resonated. One of these early-stage concepts included an algorithm that learns the moderation preferences of a publisher and provides suggested actions based on previous moderation history. Moderators would also have the option to automatically accept these suggested actions via an "automoderation" setting. This concept was well-received by moderators and they unanimously agreed that this would be amazing <em>if&nbsp</em> it could truly work as designed. See the video below for a clip from one of the user interviews where I sought feedback on the "Suggested Actions" paper prototype. <em>Note: There's audio.</em></p>
+			<video controls="controls" width="750" name="Automated Moderation" src="img/moderation/discovery.mp4"></video>
+			<h2>Tech constraints, 3rd parties, and usability testing</h2>
+			<p>After validating Suggested and Automated Actions as a concept, we were eager to start building. Unfortunately, due to technical constraints, we weren't able to build the machine learning system that would provide Suggested Actions based off a unique publisher's moderation preferences. We decided to start by suggesting network-wide rules while we continued to investigate custom moderation settings per publisher. In our research, we discovered a number of potential 3rd party partnerships that could help us better categorize comments. After coordinating several calls with various organizations, we decided to partner with Google's Perspective team to use machine learning to identify toxic comments and build our first Suggested Action: Delete if Toxic. Taking all of this new information into account, I built a high-fidelity prototype of Suggested and Automated Actions and tested its usability with moderators.</p>
+			<a href="moderation/index.html" target="_blank" class="btn">View Invision Prototype</a><p></p>
+			<figure>
+				<img src="img/moderation/ecosystem.png"></img>
+				<figcaption>A visualization of how the different pieces of the project are connected.</figcaption>
+			</figure>
+			<h2>Next Steps</h2>
+			<p>We've since created an MVP version of Suggested Actions and are looking to gather data that can answer a few of our questions:</p>
+			<ul>
+				<li>Do moderators understand what Suggested Actions are?</li>
+				<li>Do moderators agree with our actions more often when we show a Suggested Action?</li>
+				<li>Do moderators like Suggested Actions enough to select multiple (or all) comments at once and bulk Accept Suggested Actions?</li>
+			</ul>
+			<p>To answer the questions above, Suggested Actions is currently in beta with a cohort of some of our most active moderators. Additionally, I conducted a design review with our engineers as well as other product team members and they provided some great design feedback. Since I've made some changes to the design based on my team's feedback and that of the moderators from the usability study, I'll be conducting another usability study with moderators to make sure the new design is still easy to understand and use. We'll also be showing these moderators a low-fidelity concept of Automated Actions to start gaining more confidence on this concept and to continue working toward our goal of reducing (maybe even eliminating!) the cost of moderation and resurfacing the value of comments.</p>
+			<hr>
+			<a href="index.html"><div class="btn back-to-portfolio"> ← BACK TO PORTFOLIO</div></a>
+		</div>
+	</div>
+</body>
+</html>

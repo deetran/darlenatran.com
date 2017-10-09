@@ -262,18 +262,21 @@ figure {
 	border: 1px solid #EEEEEE;
 }
 
+figure img{
+	border-bottom: 1px solid #EEEEEE;
+}
+
 figcaption {
 	margin: -5px 0 5px 10px;
 	font-size: 16px;
 	color: #888888;
-	
 }
 
 /* Responsive Desktop and Mobile between 0px and 814px */
 @media screen and (max-width: 814px), screen and (max-device-width: 814px){
 	
 	body {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	/*     Nav     */
@@ -319,7 +322,7 @@ figcaption {
 	}
 
 	#hello p {
-		font-size: 14px;
+		font-size: 18px;
 	}
 
 	.wrapper {
