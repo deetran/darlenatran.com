@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta name="description" content="A collection of design work by Darlena Tran">
+	<meta name="keywords" content="designer portfolio ui ux mobile interface">
+	<meta name="author" content="Darlena Tran">
+	<title>Darlena Tran's Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="faveicon.ico" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44924854-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav>
+			<h1>
+				<a href="index.html">Darlena Tran</a>
+			</h1>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="darlena-tran-resume.pdf" target="_blank">Resumé</a></li>
+			</ul>
+		</nav>
+
+		<hr>
+
+		<div class="project wrapper-padding">
+			<img src="img/combating-cover.png"></img>
+			<h2>Combating Undesirable Content</h2>
+			<p>As a publisher's popularity increases, the volume of comments increases, which is great! However, with higher overall comment volume comes more spam, toxicity, and other comments that don't contribute to the conversation. For many large publishers, moderation at scale can become a huge burden that obfuscates the value of comments. Some publishers spend hours moderating hundreds or thousands of comments a day. In an effort to reduce this cost, combat undesirable content, and resurface the value of comments, my team designed several moderation tools to give moderators access to more robust options while maintaining their unique moderation preferences. For this series of projects, I was the lead product designer responsible for the end-to-end product from user research and interaction design to visual design.</p>
+			<p><emphasis>Note: The term 'publisher' and 'moderator' are often synonymous for smaller sites. In larger sites, a publisher is often the overarching entity that may have a moderation team that manages Disqus comments.</p>
+			<p><strong>Problem:</strong> As a publisher grows, they can become overwhelmed by the large number of comments that require moderation, especially comments that don't contribute to the conversation. The burden of spending time moderating comments can often obfuscate the value of comments.</p>
+			<p><strong>Solution:</strong> Through a series of iterative research and ideation phases, we designed a tool called Moderation Rules that allows moderators to assign automatic actions to comments with a defined set of characteristics.</p>
+			<h2>Team Alignment</h2>
+			<p>In 2017, hate speech became a big deal in the media and all eyes turned to social media and communication platforms to see how they would define and react to hate speech on their network. As one of the largest communication platforms with over 2 billion users, we knew that we had a duty to respond. I kicked off this project by getting alignment with the team around what we know, what our assumptions are, and what we want to achieve. We started off with a whiteboarding and post-it noting session with the team to think about the problems and stories that the different types of users on our network face regarding hate speech. From there, we realized that a lot of what we brainstormed were assumptions, so we looked to user research.</p>
+			<figure>
+				<img src="img/combating/user-stories.png"></img>
+				<figcaption>User stories for a publisher, moderator, commenter, and Disqus.</figcaption>
+			</figure>
+			<h2>Discovery interviews with moderators</h2>
+			<p>We interviewed several Disqus publishers about their stance on hate speech, what they thought Disqus' stance should be, and since there was a bit of an urgent timeline to publicly address our stance on hate speech, I also got early feedback on paper prototypes of a few different solutions that were based on our assumptions. From the user research, we learned that:
+			<ol>
+				<li>Definitions of hate speech varied too much between publishers to rely on any consensus being reached by crowd-sourcing opinions.</li>
+				<li>Publishers wanted Disqus to maintain a neutral stance on hate speech and continue working on building better tools to help publishers maintain control over how they define their communities.</li>
+				<li>A lot of our paper prototypes were highly desired and useful!</li>
+			</ol>
+			<p>From this research, we publicly stated that <a href="https://blog.disqus.com/our-commitment-to-fighting-hate-speech" target="_blank">our commitment to fight hate speech</a> would be fought alongside publishers and that we would be aggressively building more robust tools to help. As a result, we worked quickly to create tools that publishers from our feedback sessions needed like <a href="https://help.disqus.com/customer/en/portal/articles/2804915-shadow-banning" target="_blank">shadow banning</a>, <a href="https://help.disqus.com/customer/en/portal/articles/2806737-timeouts" target="_blank">timeouts</a>, <a href="https://help.disqus.com/customer/en/portal/articles/1450364-comment-policy" target="_blank">and comment policy</a>. 
+			
+			<h2>Dreaming Bigger, Tech Constraints, and 3rd Parties</h2>
+			<p>While the tools we made were incremental steps toward helping relieve the burden of moderating undesirable content, we recognized that they were only incremental steps and there was still a lot more that could be done. We wanted to invest some time and research into dreaming a bit bigger to see if we could make a substantial impact to moderation.</p>
+			<figure>
+				<img src="img/combating/community-settings.png"></img>
+				<figcaption>Our kind of bare-bones moderation and community preferences.</figcaption>
+			</figure>
+			<p>We initially wanted to build a machine learning algorithm that could automatically learn a publisher's unique moderation preferences over time. Unfortunately, despite seeking partnerships with 3rd parties, we didn't have enough technical expertise to build a machine learning system that could do this well enough to earn a publisher's trust. Additionally, when shown this concept, we learned that many moderators deeply valued the voices of their commenters and didn't want machines passing judgment on human thought. Because of this, we decided to completely pivot away from machine learning as a solution. Instead, we explored options that would allow human moderators to remain in control.</p>
+			
+			<h2>Pivoting to Moderation Rules</h2>
+			<p>Taking all that we'd learned so far, this is what we knew:</p>
+			<ul>
+				<li>People want people, not robots, to pass judgment on human thought.</li>
+				<li>Publishers and moderators want complete ownership over the definition of what "undesirable content" is on their site.</li>
+				<li>We needed a scalable and robust solution that didn't involve overly complicated technology.</li>
+			</ul>
+			<p>Keeping in mind that moderators want to be the ones passing judgment on comments, not robots, my team and I held a number of discovery sessions to pivot our designs. After exploring several options with a lot of input regarding technical feasibility from our engineer, we decided to design a rules-based engine called Moderation Rules. This new feature allows moderators to assign moderation actions to comments with certain characteristics. After a task-based usability test of the Moderation Rules concept with 5 moderators and an unprecented 100% success rate on our primary workflow, we decided to move forward with buliding this feature. Additionally, instead of building out an entirely robust tool with hundreds of options that were potentially not useful, we decided to opt for a beta release with an increasing rollout to gather iterative user feedback as we continue to build out the product.</p>
+			<figure>
+				<img src="img/combating/new-feature-message.png"></img>
+				<figcaption>Onboarding for our new Moderation Rules feature.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/combating/rule-details.png"></img>
+				<figcaption>A screenshot of the Moderation Rules page with behavioral analytics to help publishers decide what rules are best for them.</figcaption>
+			</figure>
+
+			<h2>Potential Next Steps</h2>
+			<p>Our analytics shows that even with a limited set of filters, we've already begun to see healthy adoption from certain members in our beta group, who we hope to work with closely for future iterations. So far, some of feedback from our beta group has us thinking:</p>
+			<ul>
+				<li>What rules can we suggest to a publisher based on what other similar publishers are using?</li>
+				<li>How can we use "and" logic to create more specific rules?</li>
+				<li>Can we create intelligently-defined and very specific rules that match up to spam patterns?</li>
+			</ul>
+			<p>Starting with the feedback above, we intend to continue iterating on the most useful parts of the product by relying on the feedback and needs of our publishers. We're so glad we were able to build a human-focused solution that reduces tedium and is a huge step for us toward building healthier, more engaging communities.</p>
+			<hr>
+			<a href="index.html"><div class="btn back-to-portfolio"> ← BACK TO PORTFOLIO</div></a>
+		</div>
+	</div>
+</body>
+</html>
