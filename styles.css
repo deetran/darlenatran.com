@@ -307,13 +307,6 @@ h2 {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
 .project a {
 	border-bottom: 1px solid currentColor;
 }
@@ -510,6 +503,30 @@ figcaption {
 		width: 200px;
 		margin: 0 auto;
 	}
+
+	.crop {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: visible;
+    }
+
+    .crop img {
+    	position: relative;
+    	left: 0;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    }
+
+    #high-position {
+    	top: 0;
+    }
+
+    .modal-content {
+    	width: 100%;
+    }
+
 	/*     About Me     */
 
 	.about span {
