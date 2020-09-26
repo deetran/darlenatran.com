@@ -186,6 +186,7 @@ h2 {
 .project-wrapper {
 	display: flex;
 	margin-bottom: 120px;
+	width: 1000px;
 }
 
 .no-line-height {
@@ -530,6 +531,7 @@ figcaption {
 	.project-wrapper {
 		display: block;
 		justify-content: none;
+		width: auto;
 	}
 
 	.description {
