@@ -9,9 +9,9 @@
 	<meta name="keywords" content="designer portfolio ui ux mobile interface">
 	<meta name="author" content="Darlena Tran">
 	<title>Darlena Tran's Portfolio</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8">
 	<link rel="icon" href="faveicon.ico" type="image/x-icon">
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,6 +24,18 @@
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- The Close Button -->
+	  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+	  <!-- Modal Content (The Image) -->
+	  <img class="modal-content" id="img01">
+
+	  <!-- Modal Caption (Image Text) -->
+	  <div id="caption"></div>
+	</div>
 </head>
 
 <body>
@@ -43,92 +55,86 @@
 
 		<div class="project wrapper-padding">
 			<img src="img/rarebits-cover.png"></img>
-			<h2>Rare Bits Redesign Exercise</h2>
-			<p></p>
-			<p><strong>Problem:</strong> The current Rare Bits homepage attracts a lot of traffic, but new user auction activity is slow to ramp up. The team hypothesizes that the home page needs better onboarding and user education about the platform and its capabilities.</p>
-			<p><strong>Solution:</strong> A few different homepage layouts that the team should A/B test and track analytics on. The best performing version should result in the largest net positive increase in new user auction activity without decreasing existing user traffic.</p>
-			
-			<h2>Approach</h2>
-			<p>I started off by reading the prompt, highlighting the most important parts, and making sure I understood the problem, the hypotheses, and the goals. I then took a look at the existing homepage and made some notes about my first impressions. From there, I outlined the metrics and personas for the project, which I then used to build what I thought was a good brand, visual design, and information architecture for the homepage.</p>
+			<div class="wrapper-text">
+				<h1>Rare Bits Redesign Exercise</h1>
+				<h3>Problem</h3>
+				<p>The current Rare Bits homepage attracts a lot of traffic, but new user auction activity is slow to ramp up. The team hypothesized that the home page needs better onboarding and user education about the platform and its capabilities.</p>
+				<h3>Solution</h3>
+				<p>A few different homepage layouts that the team should A/B test and track analytics on. The best performing version should result in the largest net positive increase in new user auction activity without decreasing existing user traffic.</p>
+				
+				<h2>Approach</h2>
+				<p>I started off by reading the prompt, highlighting the most important parts, and making sure I understood the problem, the hypotheses, and the goals. I then took a look at the existing homepage and made some notes about my first impressions. From there, I outlined the metrics and personas for the project, which I then used to build what I thought was a good brand, visual design, and information architecture for the homepage.</p>
+			</div>
 
 			<figure>
 				<img class="myImg" src="img/rarebits/sketch-1.png"></img>
 				<figcaption>Analyzing the prompt and first impressions of the homepage.</figcaption>
 			</figure>
-			
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
 
-			  <!-- The Close Button -->
-			  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+			<div class="wrapper-text">
+				<h2>Metrics</h2>
+				<p>From the prompt, it was clear that our primary metric is to <strong>increase new user auction activity</strong>. If this were a real project, I would make sure the team agreed on what defined a 'new user'. For example, is it someone who has never created an account before? Someone who made an account within the last 30 days? This definition is important to the success of the project, but wasn't necessary for the sake of this design exercise. It is also important to note that <strong>maintaining existing user traffic</strong> is important.</p>
+				
+				<h2>Personas</h2>
+				<p>Since we're focused on increasing <strong>new user</strong> buying and selling activity, we'll focus on new user personas, even though there's room to improve the experience for existing users.</p>
+				<ol>
+					<li>I'm already playing a cryptogame and I just want to use Rare Bits to <strong>shop for items for that one game.</strong></li>
+					<li>I don't play a cryptogame yet, but I understand the concept and want a <strong>low risk, easy way to try</strong> it.</li>
+					<li>I <strong>don't know anything about crypto</strong>, but I'm a gamer/collector and I'm interested in new technology.</li>
+				</ol>
+				
+				<h2>Information architecture</h2>
+				<h3>Continue</h3>
+				<ul>
+					<li>Allowing users to easily browse items on the homepage</li>
+					<li>Having a search near the top of the page for people who know what they're looking for</li>
+				</ul>
+				<h3>Start doing</h3>
+				<ul>
+					<li>Equally weight onboarding and discovery of marketplace items</li>
+					<li>Move Ethereum account info to sign up flow</li>
+					<li>Provide simple onboarding and user education with optional details for more curious users</li>
+				</ul>
 
-			  <!-- Modal Content (The Image) -->
-			  <img class="modal-content" id="img01">
+				<h2>Brand design</h2>
+				<h3>Continue</h3>
+				<ul>
+					<li>Using purple, which is sometimes associated with royalty, fitting into the gemstone and rarity theme well</li>
+					<li>Incorporating gems, diamonds, and sparkles which are often associated with valuables and currency in many games</li>
+				</ul>
+				<h3>Start doing</h3>
+				<ul>
+					<li>Gemstone logo on loading screen is very appropriate and meaningful. Should incorporate it into the brand and visual design more</li>
+					<li>Maybe more informal, colloquial language (to appeal to gamers)? While still maintaining an image of professionalism and trustworthiness</li>
+				</ul>
 
-			  <!-- Modal Caption (Image Text) -->
-			  <div id="caption"></div>
+				<h2>Visual design</h2>
+				<h3>Continue</h3>
+				<ul>
+					<li>Referencing cards from material design. Works well functionally for the information as well as the cool relation to physical Trading Card Games</li>
+					<li>Side scroll is nice for mobile viewing</li>
+				</ul>
+				<h3>Start doing</h3>
+				<ul>
+					<li>Adding hierarchy to different sections by importance</li>
+					<li>Incorporate gems and bits into VizD components</li>
+					<li>Be bolder. Look and feel is clean, but stale and generic</li>
+					<li>Remove all caps. Acronyms (DApp) and proper nouns are hard to identify and read with all caps</li>
+				</ul>
+
+				<h2>Design mocks</h2>
+				<p>After analyzing the pros and cons from varying aspects of the design, I designed a few different layouts. I made more than one because we have hypotheses, but don't have strong data supporting that better onboarding will result increased new user auction activity. If this was a real project I was working on, I would recommend A/B testing different layouts and measuring the analytics against the previous metrics mentioned (maintain user traffic and increase new user auction activity). Here are the designs I mocked up and why I made each one:</p>
+				<ol>
+					<li><strong>One-column:</strong> Shows all onboarding education above the fold.</li>
+					<li><strong>Two-column:</strong> Equal hierarchy between new user onboarding and marketplace items.</li>
+					<li><strong>Expanded Details:</strong> Allows brief explanations with more details as an option.</li>
+					<li><strong>Collections Focus:</strong> Gives more weight to games and collections instead of items.</li>
+				</ol>
+
+				<a href="img/rarebits/designs.pdf" target="_blank" class="btn forward">View PDF of Designs</a>
 			</div>
 
-			<h2>Metrics</h2>
-			<p>From the prompt, it was clear that our primary metric is to <strong>increase new user auction activity</strong>. If this were a real project, I would make sure the team agreed on what defined a 'new user'. For example, is it someone who has never created an account before? Someone who made an account within the last 30 days? This definition is important to the success of the project, but wasn't necessary for the sake of this design exercise. It is also important to note that <strong>maintaining existing user traffic</strong> is important.</p>
-			
-			<h2>Personas</h2>
-			<p>Since we're focused on increasing <strong>new user</strong> buying and selling activity, we'll focus on new user personas, even though there's room to improve the experience for existing users.</p>
-			<ol>
-				<li>I'm already playing a cryptogame and I just want to use Rare Bits to <strong>shop for items for that one game.</strong></li>
-				<li>I don't play a cryptogame yet, but I understand the concept and want a <strong>low risk, easy way to try</strong> it.</li>
-				<li>I <strong>don't know anything about crypto</strong>, but I'm a gamer/collector and I'm interested in new technology.</li>
-			</ol>
-			
-			<h2>Information Architecture</h2>
-			<p>Continue:</p>
-			<ul>
-				<li>Allowing users to easily browse items on the homepage</li>
-				<li>Having a search near the top of the page for people who know what they're looking for</li>
-			</ul>
-			<p>Start doing:</p>
-			<ul>
-				<li>Equally weight onboarding and discovery of marketplace items</li>
-				<li>Move Ethereum account info to sign up flow</li>
-				<li>Provide simple onboarding and user education with optional details for more curious users</li>
-			</ul>
-
-			<h2>Brand Design</h2>
-			<p>Continue:</p>
-			<ul>
-				<li>Using purple, which is sometimes associated with royalty, fitting into the gemstone and rarity theme well</li>
-				<li>Incorporating gems, diamonds, and sparkles which are often associated with valuables and currency in many games</li>
-			</ul>
-			<p>Start doing:</p>
-			<ul>
-				<li>Gemstone logo on loading screen is very appropriate and meaningful. Should incorporate it into the brand and visual design more</li>
-				<li>Maybe more informal, colloquial language (to appeal to gamers)? While still maintaining an image of professionalism and trustworthiness</li>
-			</ul>
-
-			<h2>Visual Design</h2>
-			<p>Continue:</p>
-			<ul>
-				<li>Referencing cards from material design. Works well functionally for the information as well as the cool relation to physical Trading Card Games</li>
-				<li>Side scroll is nice for mobile viewing</li>
-			</ul>
-			<p>Start doing:</p>
-			<ul>
-				<li>Adding hierarchy to different sections by importance</li>
-				<li>Incorporate gems and bits into VizD components</li>
-				<li>Be bolder. Look and feel is clean, but stale and generic</li>
-				<li>Remove all caps. Acronyms (DApp) and proper nouns are hard to identify and read with all caps</li>
-			</ul>
-
-			<h2>Design Mocks</h2>
-			<p>After analyzing the pros and cons from varying aspects of the design, I designed a few different layouts. I made more than one because we have hypotheses, but don't have strong data supporting that better onboarding will result increased new user auction activity. If this was a real project I was working on, I would recommend A/B testing different layouts and measuring the analytics against the previous metrics mentioned (maintain user traffic and increase new user auction activity). Here are the designs I mocked up and why I made each one:</p>
-			<ol>
-				<li><strong>One-column:</strong> Shows all onboarding education above the fold.</li>
-				<li><strong>Two-column:</strong> Equal hierarchy between new user onboarding and marketplace items.</li>
-				<li><strong>Expanded Details:</strong> Allows brief explanations with more details as an option.</li>
-				<li><strong>Collections Focus:</strong> Gives more weight to games and collections instead of items.</li>
-			</ol>
-
-			<a href="img/rarebits/designs.pdf" target="_blank" class="btn">Link to PDF of Designs</a><figure></figure>
+			<hr>
 
 			<figure>
 				<img class="myImg" src="img/rarebits/side-by-side.png"></img>
@@ -155,41 +161,47 @@
 				<figcaption>A design that draws more attention to games, collections and what they are.</figcaption>
 			</figure>
 
-			<h2>Icing on the cake</h2>
-			<p>The gemstone logo looks pretty cool and really adds character to the brand. I added a bit of my own touch to it (can you spot it?) and made a subtle animation for the header. A little pizzazz can go a long way!</p>
+			<div class="wrapper-text">
+				<h2>Icing on the cake</h2>
+				<p>The gemstone logo looks pretty cool and really adds character to the brand. I added a bit of my own touch to it (can you spot it?) and made a subtle animation for the header. A little pizzazz can go a long way!</p>
+			</div>
 
 			<video controls="controls" width="750" name="Rare Bits Animation" src="img/rarebits/animation.mp4"></video>
 			
-			<h2>If I had more time</h2>
-				<p>Since I time-boxed myself and this was not a real project, here are some things I would've liked to explore:</p>
-				<ul>
-					<li>I wasn't really able to address an important user story: "I want a low risk way to try a cryptogame." I think I need more context around how Rare Bits works in order to lower this barrier to entry for these users.</li>
-					<li>I would've liked to conduct user research to find out:</li>
+			<div class="wrapper-text">
+				<h2>If I had more time</h2>
+					<p>Since I time-boxed myself and this was not a real project, here are some things I would've liked to explore:</p>
 					<ul>
-						<li>How did they discover Rare Bits?</li>
-						<li>Are they interested in using Rare Bits? Why or why not?</li>
-						<li>What makes sense vs. what's confusing on the current homepage? Anything that can be better explained?</li>
-						<li>How would they describe cryptogames to someone who didn't know what they were?</li>
+						<li>I wasn't really able to address an important user story: "I want a low risk way to try a cryptogame." I think I need more context around how Rare Bits works in order to lower this barrier to entry for these users.</li>
+						<li>I would've liked to conduct user research to find out:</li>
+						<ul>
+							<li>How did they discover Rare Bits?</li>
+							<li>Are they interested in using Rare Bits? Why or why not?</li>
+							<li>What makes sense vs. what's confusing on the current homepage? Anything that can be better explained?</li>
+							<li>How would they describe cryptogames to someone who didn't know what they were?</li>
+						</ul>
+						<li>Looking at the analytics to see if there are any groups of people that drop-off at specific parts of the funnel. Or any other behavioral analytics that can be used to make a new hypothesis and layout design to A/B test.</li>
+						<li>Test more or vastly different layouts. The mocks I ended up with are based off a strong hypothesis that marketplace items need to stay on the homepage for new/non-logged in users. This might not be the case and it could be interesting to convert it completely into an informational onboarding page.</li>
 					</ul>
-					<li>Looking at the analytics to see if there are any groups of people that drop-off at specific parts of the funnel. Or any other behavioral analytics that can be used to make a new hypothesis and layout design to A/B test.</li>
-					<li>Test more or vastly different layouts. The mocks I ended up with are based off a strong hypothesis that marketplace items need to stay on the homepage for new/non-logged in users. This might not be the case and it could be interesting to convert it completely into an informational onboarding page.</li>
-				</ul>
-				
-			<h2>Bonus Feedback</h2>
-				<p>I had a bunch of different thoughts and ideas as I explored the Rare Bits site. Here are some of them:</p>
-				<ul>
-					<li>A tutorial video and/or step-by-step illustrations might increase new user activity. I didn't mock these up since they're not part of my skillset.</li>
-					<li>The responsive breakpoints make the layout look broken/weird at some sizes. Could be improved.</li>
-					<li>For those unfamiliar with cryptocurrency, should there be an estimated dollar conversion rate somewhere on the page? Or a way to toggle between Ethereum and USD or other currency?</li>
-					<li>Would be cool to see very personalized pages for content creators. Storytelling is very important in games and hand-crafted products. People will pay a premium for good storytelling.</li>
-					<li>New user sign up flow seems confusing, especially for someone who has never invested in any cryptocurrency. Metamask also seems confusing to set up. How can the barrier to entry be lowered?</li>
-					<li>Is there a reason why Rare Bits and Fan Bits are separate? Why not rarebits.io/creators so everything is all in once place?</li>
-				</ul>
-			<h2>Full notes</h2>
-			<p>If you're interested in seeing all the notes, click the link below! Thanks so much for reading. It was a really fun challenge!</p>
-			<a href="img/rarebits/notes.pdf" target="_blank" class="btn">Link to Full Notes</a><p></p>
+					
+				<h2>Bonus feedback</h2>
+					<p>I had a bunch of different thoughts and ideas as I explored the Rare Bits site. Here are some of them:</p>
+					<ul>
+						<li>A tutorial video and/or step-by-step illustrations might increase new user activity. I didn't mock these up since they're not part of my skillset.</li>
+						<li>The responsive breakpoints make the layout look broken/weird at some sizes. Could be improved.</li>
+						<li>For those unfamiliar with cryptocurrency, should there be an estimated dollar conversion rate somewhere on the page? Or a way to toggle between Ethereum and USD or other currency?</li>
+						<li>Would be cool to see very personalized pages for content creators. Storytelling is very important in games and hand-crafted products. People will pay a premium for good storytelling.</li>
+						<li>New user sign up flow seems confusing, especially for someone who has never invested in any cryptocurrency. Metamask also seems confusing to set up. How can the barrier to entry be lowered?</li>
+						<li>Is there a reason why Rare Bits and Fan Bits are separate? Why not rarebits.io/creators so everything is all in once place?</li>
+					</ul>
+				<h2>Full notes</h2>
+				<p>If you're interested in seeing all the notes, click the link below! Thanks so much for reading. It was a really fun challenge!</p>
+				<a href="img/rarebits/notes.pdf" target="_blank" class="btn forward">View Full Notes</a><p></p>
+			</div>
+			
 			<hr>
-			<a href="index.html"><div class="btn back-to-portfolio"> ← BACK TO PORTFOLIO</div></a>
+
+			<a href="index.html"><div class="btn back">BACK TO PORTFOLIO</div></a>
 			<script>
 				// Get the modal
 				var modal = document.getElementById('myModal');
@@ -213,7 +225,6 @@
 				  modal.style.display = "none";
 				}
 			</script>
-			
 		</div>
 	</div>
 </body>

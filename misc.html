@@ -9,9 +9,9 @@
 	<meta name="keywords" content="designer portfolio ui ux mobile interface">
 	<meta name="author" content="Darlena Tran">
 	<title>Darlena Tran's Portfolio</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8">
 	<link rel="icon" href="faveicon.ico" type="image/x-icon">
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,6 +22,20 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- The Close Button -->
+	  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+	  <!-- Modal Content (The Image) -->
+	  <img class="modal-content" id="img01">
+
+	  <!-- Modal Caption (Image Text) -->
+	  <div id="caption"></div>
+	</div>
 </head>
 
 <body>
@@ -41,18 +55,18 @@
 
 		<div class="project misc wrapper-padding">
 			<h2>Miscellaneous Designs</h2>
-			<img src="img/misc-cover.png"></img>
-			<img src="img/misc/calculator.png"></img>
-			<img src="img/misc/email-receipt.png"></img>
-			<img src="img/misc/cleanweb-hackathon.png"></img>
-			<img src="img/misc/coffee.png"></img>
-			<img src="img/misc/rice-village-logo.png"></img>
-			<img src="img/misc/chicken.png"></img>
-			<img src="img/misc/refresh-star.png"></img>
-			<img src="img/misc/good-job-star.png"></img>
-			<img src="img/misc/100-star.png"></img>
+			<img class="myImg" src="img/misc-cover.png"></img>
+			<img class="myImg" src="img/misc/calculator.png"></img>
+			<img class="myImg" src="img/misc/email-receipt.png"></img>
+			<img class="myImg" src="img/misc/cleanweb-hackathon.png"></img>
+			<img class="myImg" src="img/misc/coffee.png"></img>
+			<img class="myImg" src="img/misc/rice-village-logo.png"></img>
+			<img class="myImg" src="img/misc/chicken.png"></img>
+			<img class="myImg" src="img/misc/refresh-star.png"></img>
+			<img class="myImg" src="img/misc/good-job-star.png"></img>
+			<img class="myImg" src="img/misc/100-star.png"></img>
 			<hr>
-			<a href="index.html"><div class="btn back-to-portfolio"> ← BACK TO PORTFOLIO</div></a>
+			<a href="index.html"><div class="btn back">BACK TO PORTFOLIO</div></a>
 		</div>
 	</div>
 </body>

@@ -9,9 +9,9 @@
 	<meta name="keywords" content="designer portfolio ui ux mobile interface">
 	<meta name="author" content="Darlena Tran">
 	<title>Darlena Tran's Portfolio</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8">
 	<link rel="icon" href="faveicon.ico" type="image/x-icon">
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,6 +22,20 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- The Close Button -->
+	  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+	  <!-- Modal Content (The Image) -->
+	  <img class="modal-content" id="img01">
+
+	  <!-- Modal Caption (Image Text) -->
+	  <div id="caption"></div>
+	</div>
 </head>
 
 <body>
@@ -41,57 +55,110 @@
 
 		<div class="project wrapper-padding">
 			<img src="img/forecaster-cover.png"></img>
-			<h2>Forecaster Project Overview</h2>
-			<p>Forecaster is a product made for pricing analysts. It provides pricing recommendations and also allows the analyst to provide manual overrides when needed. Ideally, the most optimal software would price everything correctly according to supply and demand. However, the algorithm behind the recommendations always requires some subjective human input to tweak pricing for events like a special holiday or conference. For this project, I started as the UI designer and after onboarding to the project for a couple months, I became the sole UX and UI designer.</p>
-			<p><strong>Note:</strong> While reviewing these screens, please keep in mind that the users of this application are power users that are used to consuming large amounts of data and utilizing certain vocabulary and definitions that are niche to their industry.</p>
-			<p><strong>Problem:</strong> The application used by the pricing analysts was extremely dated and cumbersome to use. It was packed full of features, but the presentation of the information made it very difficult to consume and act on.
-			<p><strong>Solution:</strong> I brought the product managers, developers, and data scientists together and organized a mini design sprint to design an entirely new application that addressed the core workflows of the pricing analysts. Together, we re-assessed the primary user stories for the pricing analysts and designed a product that addressed their needs.</p>
-			<h2>What we were working with</h2>
-			<p>Our users were working in a <strong>really</strong> old application. Just by looking at the application, we truly felt the pain of our users. On the other hand, this was a great opportunity to provide a drastically improved user experience.</p>
+			<div class="wrapper-text">
+				<h1>Forecaster</h1>
+				<p>Forecaster is a product made for pricing analysts. It provides pricing recommendations and also allows the analyst to provide manual overrides when needed. Ideally, the most optimal software would price everything correctly according to supply and demand. However, the algorithm behind the recommendations always requires some subjective human input to tweak pricing for events like a special holiday or conference. For this project, I started as the UI designer and after onboarding to the project for a couple months, I became the sole UX and UI designer.</p>
+				<p><em>Note:</em> While reviewing these screens, please keep in mind that the users of this application are power users that are used to consuming large amounts of data and utilizing certain vocabulary and definitions that are niche to their industry.</p>
+				<h3>Problem</h3> 
+				<p>The application used by the pricing analysts was extremely dated and cumbersome to use. It was packed full of features, but the presentation of the information made it very difficult to consume and act on.</p>
+				<h3>Solution</h3>
+				<p>I brought the product managers, developers, and data scientists together and organized a mini design sprint to design an entirely new application that addressed the core workflows of the pricing analysts. Together, we re-assessed the primary user stories for the pricing analysts and designed a product that addressed their needs.</p>
+				<h2>What the users were working with</h2>
+				<p>Our users were working in a <strong>really</strong> old application. Just by looking at the application, we truly felt the pain of our users. On the other hand, this was a great opportunity to provide a drastically improved user experience.</p>
+			</div>
+
 			<figure>
-				<img src="img/forecaster/screenshot-1.png"></img>
+				<img class="myImg" src="img/forecaster/screenshot-1.png"></img>
 				<figcaption>A screenshot from the application being used by the pricing analysts. My favorite part: People always ask me what the blue cube under the "Susp" column means. That's not a cube. It's the letter "A".</figcaption>
 			</figure>
+			
 			<figure>
-				<img src="img/forecaster/screenshot-2.png"></img>
+				<img class="myImg" src="img/forecaster/screenshot-2.png"></img>
 				<figcaption>Look at the date! This was being used in the year of 2014. </figcaption>
 			</figure>
-			<h2>The first iteration</h2>
-			<p>At the start of this project, I provided UI design support while working with a UX designer. The UX designer wanted to build a solution with UX improvements and a visual design overhaul while maintaining the overall infrastructure of the existing application. After a couple of months, the UX designer was moved to another project, so I stepped into the role of both UX and UI designer.</p>
+
+			<div class="wrapper-text">
+				<h2>The first iteration</h2>
+				<p>At the start of this project, I provided UI design support while working with a UX designer. The UX designer wanted to build a solution with UX improvements and a visual design overhaul while maintaining the overall infrastructure of the existing application. After a couple of months, the UX designer was moved to another project, so I stepped into the role of both UX and UI designer.</p>
+			</div>
+			
 			<figure>
-				<img src="img/forecaster/screenshot-vizd.png"></img>
+				<img class="myImg" src="img/forecaster/screenshot-vizd.png"></img>
 				<figcaption>The first iteration of the application redesign.</figcaption>
 			</figure>
-			<h2>Getting the team together</h2>
-			<p>I wanted the team and I to start from scratch and really dive deep into the primary workflows of a pricing analyst. I spent the first several days with the product manager (a subject matter expert with former experience with the application) just to understand the daily workflow for a pricing analyst. I then kicked off the design initiative by bringing the Forecaster team together and in alignment with the problem at hand. I organized a mini design sprint and together we worked through our facts vs. assumptions, doodled storyboards, sketched our ideas, and had long, meaningful discussions about the design. We even engaged into rigorous conversations with the team behind the recommendations algorithm to better understand the science behind it all. By the end, we knew we needed to focus on these user stories:</p>
-			<ol>
-				<li>As a pricing analyst, I want to trust the system's recommendations most of the time, but sometimes I need to make an exception with a price override.</li>
-				<li>As a pricing analyst, I want to easily identify extreme price differences, especially regarding very low and very high pricing strategies. Right now, it's too difficult to quickly identify pricing differences when everything is denoted by numbers and letters.</li>
-				<li>As a pricing analyst, I want to easily suspend inventory at a location and place a pricing strategy on those with inventory. Right now, this information is in two difference places and it doesn't make sense to put a price on a suspended inventory.</li>
-			</ol>
+
+			<div class="wrapper-text">
+				<h2>Getting the team together</h2>
+				<p>I wanted the team and I to start from scratch and really dive deep into the primary workflows of a pricing analyst. I spent the first several days with the product manager (a subject matter expert with former experience with the application) just to understand the daily workflow for a pricing analyst. I then kicked off the design initiative by bringing the Forecaster team together and in alignment with the problem at hand. I organized a mini design sprint and together we worked through our facts vs. assumptions, doodled storyboards, sketched our ideas, and had long, meaningful discussions about the design. We even engaged into rigorous conversations with the team behind the recommendations algorithm to better understand the science behind it all. By the end, we knew we needed to focus on these user stories:</p>
+				<ol>
+					<li>As a pricing analyst, I want to trust the system's recommendations most of the time, but sometimes I need to make an exception with a price override.</li>
+					<li>As a pricing analyst, I want to easily identify extreme price differences, especially regarding very low and very high pricing strategies. Right now, it's too difficult to quickly identify pricing differences when everything is denoted by numbers and letters.</li>
+					<li>As a pricing analyst, I want to easily suspend inventory at a location and place a pricing strategy on those with inventory. Right now, this information is in two difference places and it doesn't make sense to put a price on a suspended inventory.</li>
+				</ol>
+			</div>
+
 			<figure>
-				<img src="img/forecaster/sketch-2.png"></img>
+				<div class="crop"><img class="myImg" src="img/forecaster/sketch-2.png"></img></div>
 				<figcaption>A sketch from a design sprint participant that shows how difficult it is to notice any changes in a sea of letters.</figcaption>
 			</figure>
-			<h2>What we came up with</h2>
-			<p>After many sketching sessions, the team was able to agree on a design that we all felt was more usable and cleaner to implement technically than the old design. So far, we have received highly positive reviews from informal feedback sessions with our users. Just recently, we received the approval to conduct usability testing and look forward to that in the next couple months. I'm concerned about the click-target sizes, so I'm excited that we get the opportunity to test that aspect as well as the overall intuitiveness of the design. Please see the video or click the button below to view the prototype of the application.</p>
-			<a href="rental/index.html#g=2&p=home" target="_blank" class="btn">View Axure Prototype</a><p></p>
+
+			<div class="wrapper-text">
+				<h2>What we came up with</h2>
+				<p>After many sketching sessions, the team was able to agree on a design that we all felt was more usable and cleaner to implement technically than the old design. So far, we have received highly positive reviews from informal feedback sessions with our users. Just recently, we received the approval to conduct usability testing and look forward to that in the next couple months. I'm concerned about the click-target sizes, so I'm excited that we get the opportunity to test that aspect as well as the overall intuitiveness of the design. Please see the video or click the button below to view the prototype of the application.</p>
+			</div>
+
+			<a href="rental/index.html#g=2&p=home" target="_blank" class="btn forward">View Axure Prototype</a><p></p>
+
 			<video controls="controls" width="750" name="Forecaster Demo 1" src="img/forecaster/demo.mov"></video>
-			<p>As a bonus, below is a recording of a prototype I made to visualize what a future iteration might look like. This method uses colors instead of numerical 1 to 7 values to represent the pricing strategy. I wanted try getting feedback from the analysts on decluttering their screens and providing a heatmap that could help the analysts better see patterns from a high-level view.</p>
+
+			<div class="wrapper-text">
+				<h2>Planning for the future</h2>
+				<p>As a bonus, below is a recording of a prototype I made to visualize what a future iteration might look like. This method uses colors instead of numerical 1 to 7 values to represent the pricing strategy. I wanted try getting feedback from the analysts on decluttering their screens and providing a heatmap that could help the analysts better see patterns from a high-level view.</p>
+			</div>
+
 			<video controls="controls" width="750" name="Forecaster Demo 2" src="img/forecaster/preview.mov"></video>
+
+			<div class="wrapper-text">
 			<h2>Retrospective</h2>
-			<p>The hardest parts of this project:</p>
-				<ul>
-					<li>End users were extremely inaccessible for user research. Account managers acted as gatekeepers to the users and were hesitant to let us reach out to them.</li>
-					<li>Secondary, instead of primary, research meant we couldn't be as confident in the user research findings. Our remote Product Manager conducted on-site visits to ask my questions and provide me with answers, but it was largely a game of telephone.</li>
-				</ul>
-			<p>The best parts of this project:</p>
-				<ul>
-					<li>Fulfilling the unique needs of these super users was incredibly challenging and interesting!</li>
-					<li>Providing such a vast improvement to the UX; this product was going to save pricing analysts a LOT of time and help them work smarter.</li>
-				</ul>
+				<p>The hardest parts of this project:</p>
+					<ul>
+						<li>End users were extremely inaccessible for user research. Account managers acted as gatekeepers to the users and were hesitant to let us reach out to them.</li>
+						<li>Secondary, instead of primary, research meant we couldn't be as confident in the user research findings. Our remote Product Manager conducted on-site visits to ask my questions and provide me with answers, but it was largely a game of telephone.</li>
+					</ul>
+				<p>The best parts of this project:</p>
+					<ul>
+						<li>Fulfilling the unique needs of these super users was incredibly challenging and interesting!</li>
+						<li>Providing such a vast improvement to the UX; this product was going to save pricing analysts a LOT of time and help them work smarter.</li>
+					</ul>
+			</div>
+
 			<hr>
-			<a href="index.html"><div class="btn back-to-portfolio"> ← BACK TO PORTFOLIO</div></a>
+
+			<a href="index.html"><div class="btn back">BACK TO PORTFOLIO</div></a>
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = $('.myImg');
+				var modalImg = $("#img01");
+				var captionText = document.getElementById("caption");
+				$('.myImg').click(function(){
+				    modal.style.display = "block";
+				    var newSrc = this.src;
+				    modalImg.attr('src', newSrc);
+				    captionText.innerHTML = this.alt;
+				});
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+				  modal.style.display = "none";
+				}
+			</script>
 		</div>
 	</div>
 </body>
