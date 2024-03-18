@@ -220,6 +220,13 @@ h2 {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
+.btn:disabled,.btn[disabled] {
+	cursor: default;
+	pointer-events: none;
+	border: 1px solid #999999;
+	color: #999999;
+}
+
 .forward {
 	width: max-content;
 }
